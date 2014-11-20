@@ -1,0 +1,10 @@
+Pnt S 	8" X 10" 	Print	30.00
+Pnt M 	12" X 16" 	Print	45.00
+Pnt L 	16" X 20" 	Print	60.00
+Cnv S	8" X 10" 	Canvas	100.00
+Cnv M 	12" X 16" 	Canvas	150.00
+Cnv L  	16" X 20" 	Canvas	200.00
+Pan S	10" X 20" 	Panorama	50.00
+Pan M	12" X 36" 	Panorama 	75.00
+Pan L 	24" X 72" 	Panorama 	150.00
+Poster 	20" X 30" 	Poster	25.00

@@ -1,0 +1,102 @@
+/* smallest styles- remove left column, move navigation to the bottom just above the footer with fixed position
+ * change the nav to allow more padding space for fingers, add color and arrow to make them more obvious navigation
+ * change thumbnails and images to a smaller max size
+ * increased top and bottom padding for themes and places in the search page listings and bullets added
+ * quotes do not display
+*/
+
+img {
+  max-width: 225px;
+  max-height: 225px;
+}
+
+nav {
+	display: block;
+	position: static;
+	padding: 25px 0 10px 0;
+	background-color: #b0b0b0;
+}
+
+nav li {
+	color: #a6abc5;
+	display: block;
+	margin: 15px;
+	padding: 9px;
+	border: 1px solid #900;
+	background: url(Pictures/mobile_link_arrow.png) no-repeat right center;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+.bigPicWrap {
+	max-width: 400px;
+	max-height: 400px;
+}
+
+	.bigPicWrap img {
+		max-width: 350px;
+		max-height: 350px;
+	}
+
+.bigWrapPan {
+	max-width: 400px;
+}
+
+	.bigWrapPan img {
+		max-width: 400px;
+	}
+	
+.button_right {
+  margin-top: 0.5em;
+}
+
+.button_left {
+  margin-bottom: 0.5em;
+}
+	
+.leftColumn {
+	display: none;
+}
+
+.rightColumn{
+	width: 100%;
+}
+
+.smallnav {
+	display: block;
+	text-align: center;
+}
+
+.thumBox {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+	.thumBox img {
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+.thumBoxPan {
+	max-width: 300px;
+}
+
+#places li {
+  list-style-type: circle;
+  margin-bottom: 0.75em;
+}
+
+#quotenotes {
+  display: none;
+}
+
+#slideshow img {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+#themes li {
+  list-style-type: circle;
+  margin-bottom: 0.75em;
+}

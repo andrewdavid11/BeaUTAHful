@@ -1,0 +1,52 @@
+/* XL size screen styles- to be improved as I add 2X density pixel versions for every thumbnail and image */
+
+
+.bigPicWrap {
+	max-width: 1300px;
+	max-height: 1300px;
+}
+
+	.bigPicWrap img {
+	  max-width: 1200px;
+	  max-height: 1200px;
+	}
+
+.bigWrapPan {
+	max-width: 2000px;
+}
+
+	.bigWrapPan img {
+		max-width: 1800px;
+	}
+	
+.GalleryThumb {
+	max-width: 300px;
+	max-height: 300px;
+}
+	
+.leftColumn {
+  width: 12.5%;
+}	
+
+.rightColumn{
+	width: 87.5%;
+}
+
+.thumBox {
+	max-width: 350px;
+	max-height: 350px;
+}
+
+	.thumBox img {
+		max-width: 300px;
+		max-height: 300px;
+	}
+
+.thumBoxPan {
+	max-width: 600px;
+}
+
+#slideshow img {
+	max-width: 1000px;
+	max-height: 900px;
+}

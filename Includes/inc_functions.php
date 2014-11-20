@@ -1,0 +1,115 @@
+<?php 
+
+    function validateInfo($value, $fieldName) {
+	    global $errorCount;
+	    if (empty($value)) {
+	      echo "<h4><span style='color: yellow'>$fieldName</span> is required.</h4>";
+	      ++$errorCount;
+	      $retval = "";
+	    }
+	    else {
+	       $retval = trim($value);
+	       $retval = stripslashes($value);
+	       $retval = htmlspecialchars($value);
+	    }
+	    return $retval;
+	  }
+
+    function validateEmail($value, $fieldName) {
+	    global $errorCount;
+	    if (empty($value)) {
+	      echo "<h4><span style='color: yellow'>$fieldName</span> is required</h4>";
+	      ++$errorCount;
+	      $retval = "";
+	    }
+	    else {
+	      $retval = trim($value);
+	      $retval = stripslashes($value);
+	      $retval = htmlspecialchars($value);
+	      $pattern = "/^[\w-]+(\.[\w-]+)*@"."[\w-]+(\.[\w-]+)*"."(\.[a-z]{2,3})$/i";
+	      if (preg_match($pattern, $retval) == 0) {
+	        echo "<h4><span style='color: yellow'>$fieldName is not a valid email address. Please review your entry.</h4>";
+	        ++$errorCount;
+	      }
+	    }
+	    return $retval;
+	  }
+
+
+    function validateInfo2($value, $fieldName) {
+	    global $errorCount2;
+	    if (empty($value)) {
+	      echo "<h4><span style='color: yellow'>$fieldName</span> is required.</h4>";
+	      ++$errorCount2;
+	      $retval = "";
+	    }
+	    else {
+	       $retval = trim($value);
+	       $retval = stripslashes($value);
+	       $retval = htmlspecialchars($value);
+	    }
+	    return $retval;
+	  }
+
+    function validateEmail2($value, $fieldName) {
+	    global $errorCount2;
+	    if (empty($value)) {
+	      echo "<h4><span style='color: yellow'>$fieldName</span> is required</h4>";
+	      ++$errorCount2;
+	      $retval = "";
+	    }
+	    else {
+	      $retval = trim($value);
+	      $retval = stripslashes($value);
+	      $retval = htmlspecialchars($value);
+	      $pattern = "/^[\w-]+(\.[\w-]+)*@"."[\w-]+(\.[\w-]+)*"."(\.[a-z]{2,3})$/i";
+	      if (preg_match($pattern, $retval) == 0) {
+	        echo "<h4><span style='color: yellow'>$fieldName</span> is not a valid email address. Please review your entry.</h4>";
+	        ++$errorCount2;
+	      }
+	    }
+	    return $retval;
+	  }
+
+	function get_price($prodID){
+		$QueryString = "SELECT base_price FROM products WHERE prodID LIKE '%$prodID%'";
+		$result=mysql_query($QueryString);
+		$row=mysql_fetch_row($result, MYSQL_BOTH);
+		return $row['base_price'];
+	}
+
+
+	function get_order_total(){
+	    $next=count($_SESSION['cart']);
+	    $sum=0;
+	    for ($i=0; $i<$next; $i++) {
+	      $prodID=$_SESSION['cart'][$i]['prodID'];
+	      $qty=$_SESSION['cart'][$i]['qty'];
+	      $price=get_price($prodID);
+	      $sum+=$price*$qty;  
+	    }
+	    return number_format($sum, 2);
+	  }
+
+
+/*function remove_product($pid){
+		//leave this one as $pid as the dual code not exploded is used here- I only split that value for the queries
+		$pid=intval($pid); //could not use this as its not an integer
+		$next=count($_SESSION['cart']);
+		for($i=0;$i<$next;$i++){
+			if($pid==$_SESSION['cart'][$i]['pid']){
+				unset($_SESSION['cart'][$i]);
+				break;
+			}
+		}
+		$_SESSION['cart']=array_values($_SESSION['cart']);
+	}*/
+
+	//the above function was for a remove product text link or button
+	//I want to do a function that runs when the update cart button is clicked
+	//products will be removed when the quantity is set to zero 
+	//product quantity will be changed when the button is clicked also
+
+?>
+
+	

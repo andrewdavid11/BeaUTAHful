@@ -1,0 +1,89 @@
+/* 
+   medium size screen styles
+   navigation moves to the top, arrows are added, and padding increased between each link
+   left column and right column both extend to 100% of page container div
+   photos and thumbnails reduce in size
+   extra padding between themes and places in search page category lists
+*/
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+nav {
+  position: static;
+}
+
+nav li {
+  display: inline;
+  padding: 0.33em;
+  background: url(Pictures/mobile_link_arrow.png) no-repeat left;
+  background-position: -5px;
+}
+
+.bigPicWrap {
+	max-width: 750px;
+	max-height: 750px;
+}
+
+	.bigPicWrap img {
+		max-width: 500px;
+		max-height: 400px;
+	}
+
+.bigWrapPan {
+	max-width: 1000px;
+}
+
+	.bigWrapPan img {
+		max-width: 400px;
+	}
+	
+	
+.leftColumn {
+  width: 100%;
+}
+
+.logo {
+  display: none;
+}
+
+.onlymedium {
+  display: inline;
+}
+
+.rightColumn {
+  width: 100%;
+}
+
+.thumBox {
+	max-width: 250px;
+	max-height: 250px;
+}
+
+	.thumBox img {
+		max-width: 250px;
+		max-height: 250px;
+	}
+
+.thumBoxPan {
+	max-width: 400px;
+}
+
+#places li {
+  margin-bottom: 0.5em;
+}
+
+#quotenotes {
+}
+
+#slideshow img {
+	max-width: 500px;
+	max-height: 400px;
+}
+
+#themes li {
+  margin-bottom: 0.5em;
+}
+

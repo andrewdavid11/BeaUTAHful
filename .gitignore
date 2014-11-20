@@ -1,0 +1,8 @@
+Includes/inc_db.php
+Thumbs/
+Pictures/
+FullSizePics
+*.zip
+*.gz
+fakepaypal.html
+

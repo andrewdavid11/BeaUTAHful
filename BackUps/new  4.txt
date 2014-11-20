@@ -1,0 +1,33 @@
+  <?php
+
+session_start(); 
+print '<h1>Your Shopping Cart:</h1>';
+print '<h4>The Product ID: '.$_SESSION['id'].' </h4>';
+print '<h4>The Quantity: '.$_SESSION['quantity'].' </h4>';
+
+$dbc = mysql_connect('127.0.0.1', 'root', ''); 
+mysql_select_db('product', $dbc);
+
+$query = "SELECT * FROM prod WHERE id='".$_SESSION['id']."'";
+
+
+
+if ($r = mysql_query($query, $dbc)) {
+
+while ($row = mysql_fetch_array($r)) { 
+print "<p><b>Product Name: {$row['name']}<br />
+             The Price: {$row['price']}<br />
+             Shipping Cost: {$row['shipping']}<br />
+
+
+
+ </p><hr />\n";
+ }}
+?>
+
+ down vote
+	
+
+Add another level to your cart:
+
+$_SESSION['cart'][$productID]['quantity'];
