@@ -65,14 +65,14 @@
 	  	<p>
 	    <select name="BuyPrint" class="button_left">
 	      <option value="" selected="selected">Print Options</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt1 |">8" X 10" Print : $30.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt2 |">11" X 14" Print : $40.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt3 |">12" X 18" Print: $60.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt4 |">16" X 20" Print : $75.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt5 |">18" X 24" Print : $100.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt6 |">20" X 30" Print: $125.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt7 |">24" X 36" Print : $150.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt8 |">30" X 40" Print: $200.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt1 |">8" X 10" Print : $40.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt2 |">11" X 14" Print : $60.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt3 |">12" X 18" Print: $75.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt4 |">16" X 20" Print : $100.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt5 |">18" X 24" Print : $125.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt6 |">20" X 30" Print: $150.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt7 |">24" X 36" Print : $200.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt8 |">30" X 40" Print: $250.00</option>
 		</select>&nbsp;
 		<input type="hidden" name="print-submitted" value="yes" />
 		<input type="submit" name="submit-print" value="Add to Cart" class="button_right" />
@@ -92,7 +92,7 @@
 		  <option value="<?=$ThisPic['ID_num']?> | Can3 |">12" X 18" Canvas : $150.00</option>
 		  <option value="<?=$ThisPic['ID_num']?> | Can4 |">16" X 24" Canvas : $200.00</option>
 		  <option value="<?=$ThisPic['ID_num']?> | Can5 |">24" X 36" Canvas : $300.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Can6 |">30" X 40" Canvas: $400.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Can6 |">30" X 40" Canvas : $400.00</option>
 		</select>&nbsp;
 		<input type="hidden" name="canvas-submitted" value="yes" />
 		<input type="submit" name="submit-canvas" value="Add to Cart" class="button_right"/>
@@ -112,7 +112,7 @@
 		  <option value="<?=$ThisPic['ID_num']?> | Met3 |">12" X 18" Metallic : $150.00</option>
 		  <option value="<?=$ThisPic['ID_num']?> | Met4 |">16" X 24" Metallic : $200.00</option>
 		  <option value="<?=$ThisPic['ID_num']?> | Met5 |">24" X 36" Metallic : $300.00</option>
-		    <option value="<?=$ThisPic['ID_num']?> | Met6 |">30" X 40" Metallic : $400.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Met6 |">30" X 40" Metallic : $400.00</option>
 		</select>&nbsp;
 		<input type="hidden" name="metal-submitted" value="yes" />
 		<input type="submit" name="submit-metal" value="Add to Cart" class="button_right" />

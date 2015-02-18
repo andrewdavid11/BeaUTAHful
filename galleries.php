@@ -71,7 +71,7 @@
 	   
 	  </div> <!-- ends the "noTable div" -->
 	  <br />
-	  <a href="search.php?q=Wasatch%20Mountains">View all photos in the Newest Photos Gallery>></a>
+	  <a href="search.php?q=Newest">View all photos in the Newest Photos Gallery>></a>
 	  <hr />
     <h2>Wasatch Mountains</h2>
 	  <p>The Wasatch Mountains are my "home" range, towering over Salt Lake City, a mecca of hiking, climbing

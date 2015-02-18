@@ -7,6 +7,6 @@
   $DesertsGallery = mysql_query("SELECT * FROM images WHERE keyword LIKE '%desert%'");
   $PanoGallery = mysql_query("SELECT * FROM images WHERE keyword LIKE '%panorama%'");
   $PosterGallery = mysql_query("SELECT * FROM posters");
-  $NewestGallery = mysql_query("SELECT * FROM images WHERE keyword LIKE '%newest%'");
+  $NewestGallery = mysql_query("SELECT * FROM images WHERE keyword LIKE '%Newest%'");
 
 ?>

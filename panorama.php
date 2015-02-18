@@ -113,9 +113,9 @@
 		  </form> 
       <div class="centerfloat redgreytear">
 		<h3>Additional Details</h3>
-		  <p>Free shipping on orders in the United States.</p>
-		  <p>Please allow 3-4 weeks for production and delivery of canvas and metal orders.</p>
-		  <p>Paper prints, posters, and cards will be processed faster and may ship earlier.</p>
+		  <p>Free shipping on orders in the United States.</p> 
+		  <p>Most orders will be completed and shipped within 7 days.</p>
+		  <p>Please allow 2-3 weeks for production and delivery of large orders or those that include metallic prints.</p>
 	  </div> 
 	</div>
   </div>

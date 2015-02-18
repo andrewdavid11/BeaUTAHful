@@ -41,7 +41,7 @@
       $pid = $_POST['BuyCard25']; 
     elseif($card50 == "yes")
       $pid = $_POST['BuyCard50']; 
-    elseif($poster3 == "yes")
+    elseif($posters3 == "yes")
       $pid = $_POST['BuyPoster3'];
     else
       $pid = '';
