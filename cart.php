@@ -17,7 +17,7 @@
     $card50 = isset($_POST['card50-submitted']) ? $_POST['card50-submitted'] : '';
     $posters3= isset($_POST['poster3-submitted']) ? $_POST['poster3-submitted'] : '';
     $command = isset($_POST['command']) ? $_POST['command'] : '';
-    $discount = isset($_['']) ? $_['']: '';
+    $discount = isset($_POST['discountCode']) ? $_POST['discountCode'] : '';
 
     if($panos == "yes") 
       $pid = $_POST['BuyPano'];
@@ -79,19 +79,27 @@
         $k = $j +1;
         $newqty = isset($_POST['qty_box'.$k]) ? $_POST['qty_box'.$k] : ''; //example I went off used $_REQUEST
         $newqty = intval($newqty);
-        //echo "<p>" . $newqty . "</p>";
         if($newqty>=0 && $newqty<=999){
           $_SESSION['cart'][$j]['qty']=$newqty;
-          if($newqty == 0) {
+          /*
+           * could not get this block below to work in all cases; prefer to not use it anyway and leave the cart
+           * with entries of zero showing so the customer still has a record of what they originally selected
+           * more likely to rechange their mind and protects against accidental letter entries unsetting from
+           * the cart!
+           * if($newqty == 0) {
             unset($_SESSION['cart'][$j]);
-            $_SESSION['cart'] = array_values($_SESSION['cart']);
-          }
+			$_SESSION['cart'] = array_values($_SESSION['cart']);
+          }*/
         }
         else{
           $msg='Some products not updated!, quantity must be a number between 0 and 999';
         }
       } //closes the for loop
-      //can I add my discount here? how do I pass php a form variable without submitting the form?
+		//$discount = isset($_POST['discountCode']) ? $_POST['discountCode'] : 'Walla Walla';
+	    if(!empty($discount)) {
+			$_SESSION['discountCode'] =$discount;
+		}
+	    
     } //closes the else if for updates
 
 ?>
@@ -107,7 +115,6 @@
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
-  <meta name="keywords" content="Utah, Montana, Sawtooths, Wasatch, Rocky Mountains, mountain, photography, fine art, prints, Andrew David" />
   <meta name="description" content="The Shopping Cart Page for hikephotos.com by Web Designer Andrew David. This page displays the contents of a customer's cart for review, update and to proceed to checkout." />
   <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
   <!--[if lt IE 9]>
@@ -224,10 +231,10 @@
           <td colspan="1" class="cartDiscount"> 
             If you were given a discount code,<br />
             enter it here and update the cart.</br>
-            <input type="text" name="discountCode" size="12" maxlength="16" />
+            <input type="text" name="discountCode" size="12" maxlength="16" value="" placeholder="<?= $discount; ?>" />
           </td>
           <td colspan="2">&nbsp;</td>
-          <td colspan="2" class="cartTotal"><strong>Total: $<?=get_order_total()?></strong></td>
+          <td colspan="2" class="cartTotal" id="orderTotal"><strong>Total: $<?=get_order_total()?></strong></td>
         </tr>
         <tr>
 			<td colspan="5">
@@ -238,23 +245,34 @@
           <td style="text-align: right">
 			  <input type="button" name="back2" value="Return to Shopping" onclick="history.go(-2);return true;" class="button_left" />
 		 </td>
-          <td colspan="2" style="text-align: center">
+          <td colspan="1" style="text-align: center">
             <input type="button" name="emptyCart" value="Empty Cart" onclick="empty_cart();" class="button" />
           </td>
-          <td colspan="2">
+          <td colspan="1">
             <input type="button" name="updateCart" value="Update Cart" onclick="update_cart();" class="button_right"/>
+          </td>
+          <td>
+			&nbsp;
           </td>
         </tr>
       </table>
       <div class="warning"><?=$msg?></div>
     </form>
     <h4>To remove an item from the cart, change its quantity to 0 and then click the "Update Cart" button.</h4>
-		<div id="checkoutOps">
-			<img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;">
-			<input type="button" class="button" value="Proceed to Checkout" />
-			<p class="warning"><br />Only Paypal Checkout is available for now. I am creating an onsite option.<br />
-			You do not need a PayPal account and may pay with credit cards on their secure site.</p>
-		</div>
+    
+    <div id="centralize"> <!-- use this to center the checkout button since it is not an image-->
+       <form method="post" action="checkout.php">
+		  <input type="submit" name="stripe-checkout" value="Proceed to Checkout" class="button" /><br />
+		  &nbsp;
+	   </form>
+    </div>
+    
+    <!--<h4><?php foreach($_SESSION['cart'] as $i => $item) { echo "Item" . ($i+1) . ": " . $_SESSION['cart'][$i]['pid'] . "</br >";} ?></h4>-->
+    <!-- <h4><?= $_SESSION['discountCode']; ?></h4> -->
+      <!--<h4><?= $_SESSION['orderTotal']; ?></h4>-->
+     <!-- <h4><?= $_SESSION['orderTotalPretty']; ?></h4>-->
+      <!--<h4><?= print_r(array_values($_SESSION['cart'])); ?></h4>-->
+      
     <?php 
 
       } //ends the if block to display the cart as table
@@ -264,7 +282,6 @@
       }
 
     ?>
-
   </div> <!-- ends the right column -->
    <div class="smallnav">
 	   &nbsp;
@@ -281,6 +298,7 @@
 		  </ul>	
 		</nav>
 	</div>
+	
   <?php include("Includes/inc_footer.php"); ?>
   </div> <!-- ends the container -->
   </body>

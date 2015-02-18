@@ -17,8 +17,7 @@
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
-  <meta name="keywords" content="Utah, Idaho, Sawtooths, Wasatch, Glacier, GNP, Rockies, Rocky Mountains, mountain, photography, fine art, prints, Andrew David" />
-  <meta name="description" content="Ordering page for all photos on hikephotos.com by Web Designer Andrew David. Title, description, location, details, price and size options for photos populated dynamically using php and AJAX." />
+  <meta name="description" content="Ordering page for all photos on hikephotos.com. Title, description, location, details, price and size options for photos populated dynamically using php and AJAX." />
   <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
   <!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

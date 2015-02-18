@@ -13,7 +13,6 @@
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
-  <meta name="keywords" content="Andrew David, Web Design, Web Development, Photography, E-Commerce, Shopping Carts, Web Programming, Online Pictures, selling photography, money from photography" />
   <meta name="description" content="Background and bio information for Web Designer and Developer Andrew David. Basic information about hikephotos.com, and how to hire Andrew David to program and build a similar e-commerce shopping cart solution for other photographers. Info on selling photography, prints, and pictures on the world wide web." />
   <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
   <!--[if lt IE 9]>
@@ -43,25 +42,25 @@
   <div class="rightColumn">
 	<h1>A Little Background Information</h1>
 		<img src="Pictures/WithRollins.jpg" alt="Andrew David waters his pet tree, Rollins, with a blender full of water on his patio." />
-	<h2>About Andrew and Hikephotos.com</h2>
+	<h2>About Andrew, Sarah, and Hikephotos.com</h2>
 		<p>My name is Andrew David, and HikePhotos.com is my site. All the code, layout, design, and maintanence are done in my spare time.
-		Nature and wilderness photography provides a secondary income. All the photos on this site are for sale. Just click or tap a photo to see it larger.</p>
+		Nature and wilderness photography provide a secondary income. All the photos on this site are for sale. Just click or tap a photo to see it larger.</p>
 		<p>I work primarily in Web Design and Development, front and back-end coding, and am also a seasonal postal worker.
-		I love to camp, hike, ski, climb, program, read, cook from scratch, and work on jigsaw puzzles while listening to classical music or old jazz. 
-		I strive to stay busy and watch almost no television. Some movies are okay. Check out my blog for more about me.</p>
-		<p>I market my photos under the brand name of Hikephotos.com, based primarily off the web. It is an easy to remember and find URL,
-		and that name captures the heart of my product, I think. Hikephotos.com for now is just me, Andrew David. I may add some other artits in the future.</p>
+		I love to camp, hike, ski, climb, program, read, cook from scratch, and work on jigsaw puzzles. 
+		I am recently married to a wonderful young woman with many of the same interests.</p>
+		<p>Her name is Sarah and she is definitely my better half. This site and company will take on more of her style and feel
+		in the coming years as we build up our life together. Check out my blog for more about me. Sarah has a great food blog and is a real wizard!</p>
+		<p>You can find us on Tumblr as well.</p>
 		<p>I am available for hire by the right company, and yes, I take freelance work!</p>
 		<p><a href="Extras/AndrewDavidResume.odt" target="_blank">View my resume</a></p>
-		<p><a href="http://codepen.io/andrewdavid11" target="_blank">View my Growing Front End Design Portfolio at the Codepen website</a></p>
-		<p><a href="" target="_blank">View some Backend Coding Samples</a></p>
+		<p><a href="http://codepen.io/andrewdavid11" target="_blank">Here are a few front-end projects while I build a second site for my full portfolio.</a></p>
 		<p>A freelance website will take 2-6 weeks, depending on the size, scope, and difficulty, and how quickly you get me all the images, copy, and information I need.
 		I am light on experience, and I need to improve my portfolio, so I am working cheap for a limited time.</p>
 		<ul class="centerfloat redgreytear">
-			<li>$250 for a basic information website</li>
+			<li>$250 for a basic information website, or blog</li>
 			<li>$500 for an e-commerce store with up to 50 items for sale</li>
-			<li>$750 for a fully customized large-scale e-commerce store</li>
-			<li>My rates will double, so take advantage and message me soon!</li>
+			<li>$750 for a fully customized large-scale e-commerce store like this one</li>
+			<li>My rates will be higher and match industry standards, so take advantage and message me soon! Its a great deal while it lasts!</li>
 		</ul>
 	    <p>Want more info? Interested in hiring me? <a href="contact.php">Contact me</a>.</p>
 		<img src="Pictures/AndrewWaterfall.jpg" alt="Andrew David smiles on a slab of granite near a beautiful cascading waterfall on a sunny day." />
@@ -69,11 +68,9 @@
         <p>This website is coded "from scratch" without a framework, just plain old scripts and code that instruct browsers and servers.</p>
         <p>The site is fully responsive, meaning it automatically adjusts to the screen size and device type of each visitor. Try viewing the site on different devices.
         Images change size, the navigation menu style and layout adjust to fit the screen, and the web experience is always simple and elegant.</p>
-        <p>The shopping cart connects to both Stripe and Paypal, the two most popular payment solutions for small online businesses right now.
-        A Wordpress Blog opens in a new window from within the main site menu, and is modeled to match the style of the main site. Opening the blog in a new window
-        means a customer's shopping cart stays open and filled, and the navigation to purchasing pages is never out of sight, even if my blog captivates the customer while shopping.</p>
+        <p>The shopping cart connects to Stripe, and Paypal is on the way- the two most popular payment solutions for small online businesses right now.</p>
         <p>My special niche is creating e-commerce solutions, especially for other photographers. I can handle other types of websites with flair and aplomb as well,
-        either fully customized, or within a popular framework such as Wordpress.</p>
+        either fully customized, or within a popular framework such as Wordpress, SmugMug, or Magento.</p>
         <div class="centerfloat redgreytear">
 			<h3>My Core Skills for Website Design and Development</h3>
 			  <p>HTML5, CSS3, Javascript, JQuery, PHP, MySQL</p>
@@ -89,28 +86,28 @@
 		<p>Can't wait? Well <a href="contact.php">contact me</a>, and we can work out the details.</p>
 		<img src="Pictures/GroupFalls.jpg" /><img src="Pictures/AndrewOverheadIce.jpg" alt="Andrew David holds a thick slab of ice overhead after using axes to chop through a frozen lake on a group camping trip. Fresh water anyonw?" />
     <h2>Guiding</h2>		
-		<p>I am available for hire as a guide.
-		Guiding is only by request. I do not actively seek clients, but I will try to accommodate all requests. After all, I hike a lot anyway.</p>
-		<p>The more notice I get, the more likely I can arrange the time off!</p>
-		<p>I reside in Utah but will arrange and lead a trip anywhere in the continental U.S. that I am familiar with, which includes most of the Rocky Mountain Range, and some of the Northern Cascades or Olympics.
-		In general, my local base rates for 1 or 2 people will be: </p>
+		<p>My beautiful, intelligent wife and I available for hire as a guide team.
+		Guiding is only by request. We do not actively seek clients, but will try to accommodate all requests.</p>
+		<p>The more notice we get, the more likely we can arrange the time off!</p>
+		<p>Sarah and I reside in Utah, so for now, we are only working this state.
+		In general, our local base rates for 3 member groups or smaller: </p>
 		<div class="centerfloat redgreytear">
 			<ul>
 				<li>$100 for a half day trip</li>
 				<li>$150 for a full day trip</li>
 				<li>$200 for an overnight trip</li>
 				<li>$300 for a full weekend, including 2 nights outdoors</li>
-				<li>$500 for a full week trip, up to 7 days and 6 nights</li>
+				<li>Longer trips are not available right now.</li>
 			</ul>
 		</div>
-		<p>If the trip is outside Utah there will also be travel expenses.</p>
 		<p>Group rates: there is an additional $10 charge per person per day (starting with the third person).</p>
 		<p>I can assist you with mild climbing, and with your more cumbersome gear. I will provide a pack list.
 		I will design the itinerary to hit spots at the best time of day for photographic light. It is no guarantee of great photographs, but your odds are better with me,
 		as I will know the area, conditions, travel times required, and what other professionals need and desire.</p>
-		<p>Some fresh, home-made, and healthy snacks and food are provided. I tell great stories, from my own trips and from the annals of famous mountain men.
-		I also share my knowledge so you will be ready to head out into the wild on your own after a trip with me.
-		Of course, if you want to keep hiring me, that's fine too.</p>
+		<p>Some fresh, home-made, and healthy snacks and food are provided and will include muffins, calzones, oat bars, cereal bars, and trail mix. 
+		We tell great stories, from our own trips and from the annals of famous mountain men.
+		We also share our knowledge so you will be ready to head out into the wild on your own for your next trip.
+		Of course, if you want to keep hiring us, that's fine too. Taste our cooking and you just may have to!</p>
 		<a href="Photo.php?ID_num=157"><img src="Thumbs/WheresWaldo.jpg" alt="This ridge from Hidden Peak at Snowbird Ski Resort to the American Fork Twin Peaks looks like the top of the world during a flash storm. A climber in white and black blends in with the dark rocks, covered with snow." /></a>
         <img src="Pictures/AndrewZion.jpg" alt="Andrew David triumphant atop Lady Mountain in Zion National Park with a sea of desert peaks behind" />
         <p>Interested? Want more details? <a href="contact.php">Contact Me.</a></p>

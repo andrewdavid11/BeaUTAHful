@@ -34,6 +34,26 @@
 	    }
 	    return $retval;
 	  }
+	  
+	  function validateZip($value,$fieldName) {
+		global $errorCount;
+	    if (empty($value)) {
+	      echo "<h4><span style='color: yellow'>$fieldName</span> is required</h4>";
+	      ++$errorCount;
+	      $retval = "";
+	    }
+	    else {
+	      $retval = trim($value);
+	      $retval = stripslashes($value);
+	      $retval = htmlspecialchars($value);
+	      $pattern = "/^([0-9]{5})(-[0-9]{4})?$/i";
+	      if (preg_match($pattern, $retval) == 0) {
+	        echo "<h4><span style='color: yellow'>$fieldName is not a valid zip code. Please review your entry.</h4>";
+	        ++$errorCount;
+	      }
+	    }
+		 return $retval; 
+	  }
 
 
     function validateInfo2($value, $fieldName) {
@@ -82,12 +102,25 @@
 	function get_order_total(){
 	    $next=count($_SESSION['cart']);
 	    $sum=0;
+	    $code = isset($_SESSION['discountCode']) ? $_SESSION['discountCode'] : '';
+	    $disc = 1.0; //set this as default
+	    //below I control the value of the ratio in set cases
+	    if ($code == 'poetry') {
+			$disc = 0.6;
+		}
+		if ($code == 'hippo') {
+			$disc = 0.8;
+		}
 	    for ($i=0; $i<$next; $i++) {
 	      $prodID=$_SESSION['cart'][$i]['prodID'];
 	      $qty=$_SESSION['cart'][$i]['qty'];
 	      $price=get_price($prodID);
 	      $sum+=$price*$qty;  
 	    }
+	    $sum = $sum*$disc;
+	    //$_SESSION['orderTotal'] = '$' . number_format($sum,2);
+	    $_SESSION['orderTotal'] = $sum*100;
+	    $_SESSION['orderTotalPretty'] = '$' . number_format($_SESSION['orderTotal']/100,2);
 	    return number_format($sum, 2);
 	  }
 

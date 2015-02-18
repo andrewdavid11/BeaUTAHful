@@ -14,7 +14,6 @@
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
-  <meta name="keywords" content="Utah, Idaho, Sawtooths, Wasatch, Glacier, GNP, Rockies, Rocky Mountains, mountain, photography, fine art, prints, Andrew David" />
   <meta name="description" content="Contact email forms for Andrew David, and for joining his email list which sends out a free picture and a news update now and then." />
   <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
   <!--[if lt IE 9]>
@@ -112,7 +111,7 @@
   else {
     $to = "andrewdavid@hikephotos.com";
     $subject = "Contact Form: " . $Subject;
-    $msg = "Name: " . $Name1 . "<br />Email: " . $Email1. "<br />Message: " . $Message;
+    $msg = "Name: " . $Name1 . "\nEmail: " . $Email1. "\nMessage:\n " . $Message;
     $result = mail($to, $subject, $msg);
     if ($result)
       echo "<h4 class='warning'>Thank you for your message. Andrew David will reply shortly.</h4>";
@@ -172,13 +171,17 @@
   else {
     $Name2 = stripslashes($Name2);
     $Email2 = stripslashes($Email2);
-    $QueryString = "INSERT INTO newslist VALUES ('$Name2', '$Email2')";
+    $QueryString = "INSERT INTO newslist (name, email) VALUES ('$Name2', '$Email2')";
     $AddtoDB= @mysql_query($QueryString, $DBTap);
     mysql_close($DBTap);
-    $Backup = fopen("Extras/newslist.txt", "ab");
-    if (is_writeable("Extras/newslist.txt")) {
+    $Backup = fopen("/Extras/newslist.txt", "ab");
+    if (is_writeable("/Extras/newslist.txt")) {
+		echo "<p>The backup file is writeable.</p>";
       fwrite($Backup, $Name2 . ": " .$Email2 . "\n");
     }
+    else {
+		echo "<p>The backup file is not writeable.</p>";
+	}
     fclose($Backup);
     echo "<h4 class='warning'>Thank you for joining my email newslist. You should get your first monthly newsletter soon.</h4>";
   } 

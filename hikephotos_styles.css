@@ -17,6 +17,41 @@ body {
 	padding: 0;
 }
 
+footer {
+	background-color: #900;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	clear: both;
+	border-top: 4px solid #525252;
+	border-left: 2px solid #525252;
+	border-right: 2px solid #525252;
+	border-bottom: 5px solid #525252;
+	-webkit-border-radius: 0 30px 0 30px;
+	-moz-border-radius: 0 30px 0 30px; 
+	border-radius: 0 30px 0 30px;
+	padding: 0 2px 0 2px;
+}
+
+
+footer img {
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	display: inline-block;
+}
+
+footer p {
+	margin: 0em 6em;
+}
+
+footer #stripe-img {
+	position: relative;
+	top: -10px;
+}
+
 form {
 	border-right: 1px solid #900;
 	border-bottom: 3px solid #900;
@@ -33,6 +68,12 @@ form.poster_button {
 	-moz-border-radius: 0; 
 	border-radius: 0;
 }
+
+form#StripeCheckout {
+	border-right: none;
+	border-bottom: none;
+}
+
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: "Magneto Bold", Times New Roman, Georgia, serif;
@@ -231,22 +272,7 @@ span.return:hover {
 	margin: 0 auto;
 }
 
-.footer {
-	background-color: #900;
-	color: #fff;
-	width: 100%;
-	text-align: center;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	clear: both;
-	border-top: 4px solid #525252;
-	border-left: 2px solid #525252;
-	border-right: 2px solid #525252;
-	border-bottom: 5px solid #525252;
-	-webkit-border-radius: 0 30px 0 30px;
-	-moz-border-radius: 0 30px 0 30px; 
-	border-radius: 0 30px 0 30px;
-	padding: 0 2px 0 2px;
-}
+
 
 .GalleryThumb {
 	max-width: 250px;
@@ -368,6 +394,12 @@ span.return:hover {
 	border-radius: 30px;
 }
 
+#centralize {
+	width: 20%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
 #checkoutOps {
   text-align: center;
   width: 50%;
@@ -445,6 +477,17 @@ span.return:hover {
 		max-width: 700px;
 		max-height: 500px;
 	}
+	
+#stripecheckout {
+	width: 25%;
+	text-align: center;
+	margin: 5px auto;
+}
+
+#stripecheckout form {
+	border-right: none;
+	border-bottom: none;
+}
 
 #themes {
 	width: 40%;
