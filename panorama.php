@@ -16,7 +16,6 @@
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
-  <meta name="keywords" content="Utah, Grand Canyon, Sawtooths, Wasatch, GNP, National Park, Rocky Mountains, mountain, photography, fine art, prints, Andrew David" />
   <meta name="description" content="Adventure and Wilderness Panorama Galleries from Utah, the Pacific Northwest, the Grand Canyon, and the Rocky Mountains and Canyons of the West: prints for sale by Andrew David." />
   <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
   <!--[if lt IE 9]>
@@ -57,57 +56,56 @@
 	<div class="orderForms">
 	   <a name="buy_now"></a>
 	   <h3>A Note About Buying My Panoramas</h3>
-	     <p>I love long sweeping panorama prints. Some of my favorite pictures over the years have been this type of shot.
-	     They do, of course, run in different proportions and sizes than standard prints . Many frame or art shops
-	     will carry 10" X 20", 12" X 24" or 12" X 36" frames.</p>
-	     <p>Please read the description I have provided for each panorama print. I included a note about what size to order 
+	     <p>Please read the description I have provided for each panorama print. I have included a note about what size to order 
 	     for each particular photo. Some are 2:1 length to height and some are 3:1. I do also have a very few extra wide
 	     panoramas that are in 4:1 ratio. Those extra long panoramas will come as 2 separate 2:1 prints, so that
 	     no special-order frame will be required. This also allows for "cornering" the panorama, putting each half on a different wall.</p>
 	     <p>If you have any questions, of course, <a href="contact.php">contact me</a></p>
 	   <h3>Order a Print of This Panorama</h3>
-		   <p>All panoramas are printed on premium paper with a matte finish at a professional studio.<br />
-		   Panoramas are then rolled in a protective plastic poster sleeve and shipped in a sturdy tube, insured.<br />
-		   The back of each photo is signed.</p>
+		   <p>All panoramas are printed on premium Kodac Luster paper with a matte finish at a local, independent, professional studio.<br />
+		   Panoramas are mounted and the corners are padded for extra protection during shipping.<br />
+		   The back of each panorama print is signed.</p>
 		  <form method="post" action="cart.php" >
 			<p>
 			<select name="BuyPano" class="button_left">
 			  <option value="" selected="selected">Panorama Print Options</option>
-			  <option value="<?=$ThisPic['ID_num']?> | Pan1 |">12" X 24" Print : $75.00</option>
-			  <option value="<?=$ThisPic['ID_num']?> | Pan2 |">12" X 36" Print : $100.00</option>
+			  <option value="<?=$ThisPic['ID_num']?> | Pan1 |">12" X 24" Print : $100.00</option>
+			  <option value="<?=$ThisPic['ID_num']?> | Pan2 |">12" X 36" Print : $150.00</option>
 			  <option value="<?=$ThisPic['ID_num']?> | Pan3 |">12" X 48" Print : $200.00</option>
 			</select>&nbsp;
 			<input type="hidden" name="pano-submitted" value="yes" />
 			<input type="submit" name="submit-pano" value="Add to Cart" class="button_right" />
 			<br /></p>
 		  </form>
-	  <h3>Order a Canvas of this Panorama</h3>
-		   <p>All canvas panoramas are printed on premium thick-weave fiber board.<br />
-		   Canvases are shipped in a solid box, insured.<br />
-		   The back of each canvas is signed along the edge.</p>
+	  <h3>Order a Canvas Gallery Wrap of this Panorama</h3>
+		  <p>All canvas prints are produced as gallery wraps on Epson Canvas at a local, independent, professional studio.<br />
+	      With a gallery wrap, no frame is needed, and the photo "wraps" around the edges, meeting the wall.<br />
+	      Each canvas gallery wrap will stand approximately 1" out from the wall.
+	      The back of each canvas is signed.</p>
 		  <form method="post" action="cart.php" >
 			<p>
 			<select name="BuyCanPan" class="button_left">
 			  <option value="" selected="selected">Canvas Panorama Options</option>
-			  <option value="<?=$ThisPic['ID_num']?> | CanPan1 |">16" X 32" Canvas : $150.00</option>
-			  <option value="<?=$ThisPic['ID_num']?> | CanPan2 |">16" X 48" Canvas : $200.00</option>
+			  <option value="<?=$ThisPic['ID_num']?> | CanPan1 |">12" X 24" Canvas : $200.00</option>
+			  <option value="<?=$ThisPic['ID_num']?> | CanPan2 |">12" X 36" Canvas : $300.00</option>
+			  <option value="<?=$ThisPic['ID_num']?> | CanPan3 |">12" X 48" Canvas : $400.00</option>
 			</select>&nbsp;
 			<input type="hidden" name="canpan-submitted" value="yes" />
 			<input type="submit" name="submit-canpan" value="Add to Cart" class="button_right" />
 			<br /></p>
 		  </form>
-	 <h3>Order a Metal Print of this Panorama</h3>
-	       <p>All metal prints are done on a single sheet of aluminum.<br />
-	       The print is not "painted" onto the metal, so the entire sheet can be dry or wet washed as needed.<br />
-	       This is a premium look, suitable with frame, or unframed.<br />
-		   Metal prints will ship in a solid box, insured.<br />
-		   The back of each metal print is signed.</p>
+	 <h3>Order a Metallic Gallery Wrap of this Panorama</h3>
+	       <p>All metallic prints are produced as gallery wraps at a local, independent, professional studio.<br />
+	       With a gallery wrap, no frame is needed, and the photo "wraps" around the edges of the print, meeting the wall.<br />
+	       Each gallery wrap will stand approximately 1" out from the wall.
+		   The back of each metallic gallery wrap is signed.</p>
 		  <form method="post" action="cart.php" >
 			<p>
 			<select name="BuyMetPan" class="button_left">
 			  <option value="" selected="selected">Metal Panorama Options</option>
-			  <option value="<?=$ThisPic['ID_num']?> | MetPan1 |">10" X 20" Metal : $150.00</option>
-			  <option value="<?=$ThisPic['ID_num']?> | MetPan2 |">12" X 36" Metal : $250.00</option>
+			  <option value="<?=$ThisPic['ID_num']?> | MetPan1 |">12" X 24" Metal : $200.00</option>
+			  <option value="<?=$ThisPic['ID_num']?> | MetPan2 |">12" X 36" Metal : $300.00</option>
+			  <option value="<?=$ThisPic['ID_num']?> | MetPan3 |">12" X 48" Metal : $400.00</option>
 			</select>&nbsp;
 			<input type="hidden" name="metpan-submitted" value="yes" />
 			<input type="submit" name="submit-metpan" value="Add to Cart" class="button_right" />

@@ -57,61 +57,62 @@
 	<hr />
 	<div class="orderForms">
 	   <a name="buy_now"></a>
-	   <h3>Order a Print of This Photo</h3>
-	   <p>All photos are printed on premium paper with a matte finish at a professional studio. A matte finish helps reduce glare,
-	   especially when framed.<br />
-	   The back of each photo is signed. These cards are cut, glued, and assembled by hand.</p>
+	   <h3>Order a Mounted Print of This Photo</h3>
+	   <p>All photos are printed on premium Kodac Luster paper with a matte finish at a local, independent, professional studio. <br />
+	   Prints are mounted to hard board and corners are padded and protected during shipping. The back of each photo is signed.<br />
+	   These traditional prints should be framed before hanging to protect them and extend their life.</p>
 	  <form method="post" action="cart.php">  
 	  	<p>
 	    <select name="BuyPrint" class="button_left">
 	      <option value="" selected="selected">Print Options</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt1 |">8" X 10" Print : $25.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt1 |">8" X 10" Print : $30.00</option>
 		  <option value="<?=$ThisPic['ID_num']?> | Pnt2 |">11" X 14" Print : $40.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt3 |">12" X 16" Print: $50.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt3 |">12" X 18" Print: $60.00</option>
 		  <option value="<?=$ThisPic['ID_num']?> | Pnt4 |">16" X 20" Print : $75.00</option>
 		  <option value="<?=$ThisPic['ID_num']?> | Pnt5 |">18" X 24" Print : $100.00</option>
 		  <option value="<?=$ThisPic['ID_num']?> | Pnt6 |">20" X 30" Print: $125.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Pnt7 |">24" X 32" Print : $150.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Pnt7 |">24" X 36" Print : $150.00</option>
 		  <option value="<?=$ThisPic['ID_num']?> | Pnt8 |">30" X 40" Print: $200.00</option>
 		</select>&nbsp;
 		<input type="hidden" name="print-submitted" value="yes" />
 		<input type="submit" name="submit-print" value="Add to Cart" class="button_right" />
 		<br /></p>
 	  </form>
-	  <h3>Order a Canvas of This Photo</h3>
-	   <p>All canvas prints are done on premium thick weave fiber board. These can be framed, but are typically hung without framing, so the cost of the canvas can be somewhat offset by saving on framing.<br />
-	   Canvases will ship in a solid box, insured.<br />
-	   The back of each canvas is signed,along the edge. The photo will wrap around, so the edges contain part of the print.</p>
+	  <h3>Order a Canvas Gallery Wrap of This Photo</h3>
+	   <p>All canvas prints are produced as gallery wraps on Epson Canvas at a local, independent, professional studio.<br />
+	   With a gallery wrap, no frame is needed, and the photo "wraps" around the edges, meeting the wall.<br />
+	   Each canvas gallery wrap will stand approximately 1" out from the wall.
+	   The back of each canvas is signed.</p>
 	  <form method="post" action="cart.php">
 	  	<p>
 	    <select name="BuyCanvas" class="button_left">
 	      <option value="" selected="selected">Canvas Options</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Can1 |">12" X 16" Canvas : $75.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Can2 |">16" X 20" Canvas : $100.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Can3 |">18" X 24" Canvas : $150.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Can4 |">20" X 30" Canvas : $200.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Can5 |">24" X 32" Canvas : $250.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Can6 |">30" X 40" Canvas : $350.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Can1 |">8" X 12" Canvas : $75.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Can2 |">11" X 17" Canvas : $125.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Can3 |">12" X 18" Canvas : $150.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Can4 |">16" X 24" Canvas : $200.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Can5 |">24" X 36" Canvas : $300.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Can6 |">30" X 40" Canvas: $400.00</option>
 		</select>&nbsp;
 		<input type="hidden" name="canvas-submitted" value="yes" />
 		<input type="submit" name="submit-canvas" value="Add to Cart" class="button_right"/>
 		<br /></p>
 	  </form>
-	  <h3>Order A Metal Print of This Photo</h3>
-	    <p>All metal prints are done on a single sheet of aluminum.<br />
-	    The print is not "painted" onto the metal, so the entire sheet can be dry or wet washed as needed.<br />
-	    This is a premium look, suitable with frame, or unframed.<br />
-	    Metal prints will ship in a solid box, insured.<br />
-		The back of each metal print is signed.</p>
+	  <h3>Order A Metallic Gallery Wrap Print of This Photo</h3>
+	    <p>All metallic prints are produced as gallery wraps at a local, independent, professional studio.<br />
+	    With a gallery wrap, no frame is needed, and the photo "wraps" around the edges of the print, meeting the wall.
+	    Each gallery wrap will stand approximately 1" out from the wall.
+		The back of each metallic gallery wrap is signed.</p>
 	     <form method="post" action="cart.php">
 	  	<p>
 	    <select name="BuyMetal" class="button_left">
 	      <option value="" selected="selected">Metal Options</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Met1 |">8" X 10" Metal : $100.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Met2 |">11" X 14" Metal : $150.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Met3 |">16" X 20" Metal : $200.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Met4 |">24" X 30" Metal : $350.00</option>
-		  <option value="<?=$ThisPic['ID_num']?> | Met5 |">30" X 40" Metal : $500.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Met1 |">8" X 12" Metallic : $75.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Met2 |">11" X 17" Metallic : $125.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Met3 |">12" X 18" Metallic : $150.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Met4 |">16" X 24" Metallic : $200.00</option>
+		  <option value="<?=$ThisPic['ID_num']?> | Met5 |">24" X 36" Metallic : $300.00</option>
+		    <option value="<?=$ThisPic['ID_num']?> | Met6 |">30" X 40" Metallic : $400.00</option>
 		</select>&nbsp;
 		<input type="hidden" name="metal-submitted" value="yes" />
 		<input type="submit" name="submit-metal" value="Add to Cart" class="button_right" />
@@ -154,9 +155,9 @@
 	  </form>
 	  <div class=" centerfloatDetails redgreytearReverse">
 	    <h3>Additional Details</h3>
-		  <p>Free shipping on orders in the United States.</p>
-	      <p>Please allow 3-4 weeks for production and delivery of canvas and metal orders.</p>
-	      <p>Paper prints, posters, and cards will be processed faster and may ship earlier.</p>
+		  <p>Free shipping on orders in the United States.</p> 
+		  <p>Most orders will be completed and shipped within 7 days.</p>
+		  <p>Please allow 2-3 weeks for production and delivery of large orders or those that include metallic prints.</p>
 	  </div>
 	</div>
   </div>
