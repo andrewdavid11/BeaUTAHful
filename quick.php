@@ -136,6 +136,7 @@
 		  </form>
 		 
 	   <h3>Collage Poster Bundles</h3>	
+	     <img src="Pictures/posterPack.jpg" alt="A trio of rolled, wrapped collage posters laid out."/>
 	     <p>These collage posters are printed on premium thick paper with black border and trim.<br />
 	     My in-stock designs have 25-30 photos arranged to show the four seasons for a particular area. 
 	     To peruse the posters in my lineup for this year, check out the <a href="poster.php">Poster Gallery Page</a>.<br />
@@ -147,9 +148,9 @@
 		   <p>
 			   <select name="BuyPoster3" class="button_left">
 				  <option value="" selected="selected">Collage Poster Bundle Options</option>
-				  <option value="1001 | Pstr3 | Utah">20" X 30" Collage 3 Pack, Utah Theme: $20</option>
-				  <option value="1001 | Pstr3 | Southwest">20" X 30" Collage 3 Pack, Southwest Theme: $20</option>
-				  <option value="1001 | Pstr3 | Wasatch">20" X 30" Collage 3 Pack, Wasatch Mountains: $20</option>
+				  <option value="1002 | Pstr3 | Utah">20" X 30" Collage 3 Pack, Utah Theme: $20</option>
+				  <option value="1002 | Pstr3 | Southwest">20" X 30" Collage 3 Pack, Southwest Theme: $20</option>
+				  <option value="1002 | Pstr3 | Wasatch">20" X 30" Collage 3 Pack, Wasatch Mountains: $20</option>
 		       </select>&nbsp;
 		        <input type="hidden" name="poster3-submitted" value="yes" /> 
 				<input type="submit" name="submit-poster3" value="Add to Cart" class="button_right"/>

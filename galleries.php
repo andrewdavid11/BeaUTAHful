@@ -284,9 +284,8 @@
   </div>
   <div id="posters">
     <h2>Fine Art Collage Poster Gallery</h2>
-      <p>These 20" X 30" posters come on a premium thick paper, with black border. Custom posters are available, or collect any of these
-    	in-stock designs. There are no repeated photos on any poster, so you can collect them all if you want. These look very posh
-    	mixed in with larger framed prints and display the variety of different locations. These are not your teenager's flimsy poster
+      <p>These 20" X 30" posters come on a premium thick paper, with black border. Custom posters are available. There are no repeated photos on any poster, so you can collect them all if you want. These look very posh
+    	mixed in with larger framed prints and display the variety of different locations. These are not a flimsy poster
     	from a record store!</p>
       <div class="noTable">
 		  
