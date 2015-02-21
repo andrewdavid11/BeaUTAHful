@@ -54,8 +54,8 @@
 	}
 	
 ?>
-
-  <?php include("Includes/inc_footer.php"); ?>
+  <?php //include("Includes/inc_footer.php"); ?>
+  <?php include(dirname(__FILE__) . "/inc_footer.php"); ?>
  </div>	
 </body>
 </html>

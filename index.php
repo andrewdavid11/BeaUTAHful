@@ -48,12 +48,11 @@
     <div id="slideshow">
 	    <a id="slideshowLink" href="photo.php?ID_num=320"><img src="Pictures/ShadowLogoSep.jpg" alt="A rolling slideshow of images from around the Western United States." /></a>
     </div>
-     <p><span style='color: yellow'>This site is browse only for the next few weeks while I get set up to run credit cards. Thank you for your patience,
-     and for your visit.</span></p>
+     <p><span style='color: yellow'>Checkout now works and I am securely running credit cards at last. Paypal option coming soon.</span></p>
      <p>Isn't this a Bea-UTAH-ful world we live in?! I'm a photographer, and a web designer and developer based near
       Salt Lake City, Utah.</p>
       <p>I spend some of each year out in wild places, sleeping on the ground, getting wet, climbing mountains, hiking, and taking pictures.<br />
-      I created this site all by my lonesome to document my adventures, and my coding and Web design skills.</p>
+      I created this site all by my lonesome to document my adventures, and display my coding and Web design skills.</p>
       <p>Love my site and my style? Want to hire me? Then start at the <a href="about.php">About Page</a>.</p>
   </div>
   <div class="smallnav">

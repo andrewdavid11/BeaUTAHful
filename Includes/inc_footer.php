@@ -1,4 +1,8 @@
 <footer>
+	 <?php 
+	   //defined('thefooter') or die('Not with me my friend');
+	 ?>
+	
 		<p>All material and photographs &copy; copyright Andrew David Hodgson, DBA Andrew David. All rights reserved.
 		Website by Andrew David.
 		Andrew David is available for hire and does freelance work.</p>

@@ -90,7 +90,7 @@
 			</p>
 		  </form>
 		<h3>25 Card Packs</h3>  
-		   <p>These packs are $50 each, or $2 per card. Still many options.</p>
+		   <p>25 unique cards from the category of your choice. These packs are $50 each, or $2 per card. Still many options.</p>
 		   <form method="post" action="cart.php">
 			<p>
 			  <select name="BuyCard25" class="button_left">
@@ -115,7 +115,8 @@
 		  </form>
 		   
 	   <h3>50 Card Packs</h3>	
-	     <p>I have fewer options on these listed, due to my no duplicates policy. These are $75, or $1.50 per card.</p>	
+	     <p>50 unique cards in the category of your choice.
+	     I have fewer options on these listed, due to my no duplicates policy. These are $75, or $1.50 per card.</p>	
 	     <p>For larger orders, or special instructions,<a href="contact.php">contact me</a> for now. I will improve this page to allow for further discounts and custom options in the future, but 
 	     that will get complicated and for now, an old-fashioned phone call or email makes more sense for my business.</p>	  
 		 <form method="post" action="cart.php">
@@ -136,14 +137,12 @@
 		  </form>
 		 
 	   <h3>Collage Poster Bundles</h3>	
-	     <img src="Pictures/posterPack.jpg" alt="A trio of rolled, wrapped collage posters laid out."/>
+	     <img src="Pictures/PosterPack.jpg" alt="A trio of rolled, wrapped collage posters laid out." />
 	     <p>These collage posters are printed on premium thick paper with black border and trim.<br />
-	     My in-stock designs have 25-30 photos arranged to show the four seasons for a particular area. 
-	     To peruse the posters in my lineup for this year, check out the <a href="poster.php">Poster Gallery Page</a>.<br />
-	     I have a large backstock of these and am willing to consider greatly reduced prices for large orders or stocking a store display.
-	     Just <a href="contact.php">contact me</a> and we can start negotiating.</p>
-	     <p>I am unsure if these will be offered in the future. They have not been a great seller for me, which is too bad,
-	     as they look terrific.</p>
+	     My in-stock designs have 25-30 unique photos arranged to show a theme or location to maximum impact.
+	     To peruse the posters in my lineup for this year, check out the <a href="poster.php">Poster Gallery Page</a>.</p>
+		 <p>Posters are on sale until I clear out my stock. Then I will offer custom designs.These just have not been a great seller for me.
+		 They look great on any wall though, and are a very affordable way to enjoy a broad spectrum of my nature photography.</p>
 		 <form method="post" action="cart.php">
 		   <p>
 			   <select name="BuyPoster3" class="button_left">
@@ -158,9 +157,9 @@
 		</form>
 		<div class="centerfloat redgreytear">
 		  <h3>Additional Details</h3>
-			<p>Free shipping on orders in the United States.</p>
-			<p>Please allow 3-4 weeks for production and delivery of canvas and metal orders.</p>
-			<p>Paper prints, posters, and cards will be processed faster and may ship earlier.</p>
+			<p>Free shipping on orders in the United States.</p> 
+		    <p>Most orders will be completed and shipped within 7 days.</p>
+		    <p>Please allow 2-3 weeks for production and delivery of large orders or those that include metallic prints.</p>
 	    </div>
   </div>
   <div id="quotenotes">
@@ -185,7 +184,9 @@
 		  </ul>	
 		</nav>
 	</div>
-	<?php include("Includes/inc_footer.php"); ?>
+	<?php 
+		//define('thefooter', TRUE);
+		include("Includes/inc_footer.php"); ?>
 </div>
 </body>
 </html>  
