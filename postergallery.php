@@ -7,14 +7,10 @@
 <head>
   <title>Bea-UTAH-ful Poster Viewer and Order Page</title>
   <link rel="stylesheet" type="text/css" href="hikephotos_styles.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="hikephotos_styles_small.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="hikephotos_styles_medium.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:1401px)" href="hikephotos_styles_xl.css" />
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  <meta name="keywords" content="Nevada, Colorado, Arizona, Bea-UTAH-ful, Utah, Southwest, Wasatch, collage, photography, fine art, posters, Andrew David" />
   <meta name="description" content="Detailed collage poster viewing gallery for Andrew David. Collage themes include Wasatch Mountains, beautiful Utah, and the American Southwest." />
   <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
   </head>

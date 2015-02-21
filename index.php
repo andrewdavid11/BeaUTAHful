@@ -8,9 +8,6 @@
 <head>
   <title>Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David</title>
   <link rel="stylesheet" type="text/css" href="hikephotos_styles.css" />
-  <!--<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="hikephotos_styles_small.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="hikephotos_styles_medium.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:1401px)" href="hikephotos_styles_xl.css" /> -->
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
@@ -30,7 +27,7 @@
     </div>
     <nav>
 	  <ul>
-	   <li class="onlymedium"><a href="home.php">Home</a></li>
+	   <li class="onlymedium"><a href="index.php">Home</a></li>
 	   <li><a href="about.php">About</a></li>
 	   <li><a href="galleries.php">Galleries</a></li>
 	   <li><a href="licensing.php">License/Prints</a></li>
@@ -51,7 +48,7 @@
      <p>Isn't this a Bea-UTAH-ful world we live in?! I'm a photographer, and a web designer and developer based near
       Salt Lake City, Utah.</p>
       <p>I spend some of each year out in wild places, sleeping on the ground, getting wet, climbing mountains, hiking, and taking pictures.<br />
-      I created this site all by my lonesome to document my adventures, and display my coding and Web design skills.</p>
+      I created this site all by my lonesome to document my adventures, and to display my coding and Web design skills.</p>
       <p>Love my site and my style? Want to hire me? Then start at the <a href="about.php">About Page</a>.</p>
   </div>
   <div class="smallnav">

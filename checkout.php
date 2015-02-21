@@ -2,10 +2,6 @@
    include("Includes/inc_db.php"); 
    include("Includes/inc_functions.php");
    
-  /* while ($row = $_SESSION['cart'] {
-   var_dump($row]) ;
-   } */
-   
    ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1-strict.dtd">
@@ -13,9 +9,6 @@
 <head>
   <title>Checkout: Provide Shipping Information</title>
   <link rel="stylesheet" type="text/css" href="hikephotos_styles.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="hikephotos_styles_small.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="hikephotos_styles_medium.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:1401px)" href="hikephotos_styles_xl.css" />
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
@@ -39,9 +32,6 @@
   $shipState = "";
   $shipZip = "";
   $sessionID = session_id();
-  
-   /*$cartCodes = foreach($_SESSION['cart'] as $i => $item) 
-					{ echo "Item" . ($i+1) . ": " . $_SESSION['cart'][$i]['pid'] . "</br >";};*/
 
   if (isset($_POST['shipping-submit'])) {
       $customerFirst = validateInfo($_POST['ship-name-first'], 'Your First Name');

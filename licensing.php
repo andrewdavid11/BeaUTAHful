@@ -4,13 +4,9 @@
 <head>
   <title>HikePhotos.com Licensing and Print Information</title>
   <link rel="stylesheet" type="text/css" href="hikephotos_styles.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="hikephotos_styles_small.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:801px)" href="hikephotos_styles_medium.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:1401px)" href="hikephotos_styles_xl.css" />
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
-  <meta name="keywords" content="Licensing, magazine, print rights, photos, photography, fine art, Andrew David" />
   <meta name="description" content="Specific information about how to license prints for sale by Andrew David, and about print options available through hikephotos.com." />
   <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
   <!--[if lt IE 9]>
@@ -26,7 +22,7 @@
     </div>
    <nav>
 	  <ul>
-	   <li class="onlymedium"><a href="home.php">Home</a></li>
+	   <li class="onlymedium"><a href="index.php">Home</a></li>
 	   <li><a href="about.php">About</a></li>
 	   <li><a href="galleries.php">Galleries</a></li>
 	   <li><a href="licensing.php">License/Prints</a></li>

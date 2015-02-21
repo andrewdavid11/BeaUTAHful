@@ -9,9 +9,6 @@
 <head>
   <title>Checkout: Provide Shipping Information</title>
   <link rel="stylesheet" type="text/css" href="hikephotos_styles.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="hikephotos_styles_small.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="hikephotos_styles_medium.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:1401px)" href="hikephotos_styles_xl.css" />
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
@@ -54,8 +51,7 @@
 	}
 	
 ?>
-  <?php //include("Includes/inc_footer.php"); ?>
-  <?php include(dirname(__FILE__) . "/inc_footer.php"); ?>
+  <?php include("Includes/inc_footer.php"); ?>
  </div>	
 </body>
 </html>
