@@ -8,13 +8,12 @@
 <head>
   <title>Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David</title>
   <link rel="stylesheet" type="text/css" href="hikephotos_styles.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="hikephotos_styles_small.css" />
+  <!--<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="hikephotos_styles_small.css" />
   <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="hikephotos_styles_medium.css" />
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:1401px)" href="hikephotos_styles_xl.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width:1401px)" href="hikephotos_styles_xl.css" /> -->
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <meta name="copyright" content="Andrew David" />
-  <meta name="keywords" content="mountain, hike, hiking, adventure, wilderness, photography, fine art, prints, pictures, Andrew David" />
   <meta name="description" content="Hiking and Adventure Photography from the mountains and canyons of the West: prints for sale by Andrew David. Photograpthy e-commerce solutions and design by Andrew David." />
   <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
   <!--[if lt IE 9]>
