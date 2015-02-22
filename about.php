@@ -110,29 +110,10 @@
         <p>Interested? Want more details? <a href="contact.php">Contact Me.</a></p>
   </div>
 </div>
-   <div id="quotenotes">
-	  <p>"Life without ropes."</p>
-	</div>
-	  <hr width="20%" align="right" class="hidesmall" />
-	  <hr width="40%" align="right" class="hidesmall" />
-	  <hr width="60%" align="right" class="hidesmall" />
-	  <hr width="80%" align="right" class="hidesmall" />
-   <div class="smallnav">
-	   &nbsp;
-		<nav>
-		  <ul>
-		   <li><a href="index.php">Home</a></li>
-		   <li><a href="about.php">About</a></li>
-		   <li><a href="galleries.php">Galleries</a></li>
-		   <li><a href="licensing.php">License/Prints</a></li>
-		   <li><a href="blog" target="_blank">Blog</a></li>
-		   <li><a href="contact.php">Contact</a></li>
-		   <li><a href="search.php">Search</a></li>
-		   <li><a href="quick.php">Quick Orders</a></li>
-		  </ul>	
-		</nav>
-	</div>
-	
-<?php include('Includes/inc_footer.php'); ?>
+ <?php 
+	include("Includes/inc_quotes_plus.php");
+	include("Includes/inc_small_nav.php"); 
+	include("Includes/inc_footer.php");
+ ?>
 </body>
 </html>

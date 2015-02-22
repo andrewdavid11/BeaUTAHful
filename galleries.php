@@ -311,29 +311,11 @@
   <p>These are only some of many great photographs available on this site.  Don't hesitate to check the <a href="search.php">search page</a>
 	  for many more galleries and options to find just what you are looking for.</p>
   </div> <!-- ends the right column -->
-  	<div id="quotenotes">
-	  <p>"Don't forget to live."</p>
-	</div>
-    <hr width="20%" align="right" class="hidesmall" />
-    <hr width="40%" align="right" class="hidesmall" />
-    <hr width="60%" align="right" class="hidesmall" />
-    <hr width="80%" align="right" class="hidesmall" />
-    <div class="smallnav">
-		&nbsp;
-		<nav>
-		  <ul>
-		   <li><a href="index.php">Home</a></li>
-		   <li><a href="about.php">About</a></li>
-		   <li><a href="galleries.php">Galleries</a></li>
-		   <li><a href="licensing.php">License/Prints</a></li>
-		   <li><a href="blog" target="_blank">Blog</a></li>
-		   <li><a href="contact.php">Contact</a></li>
-		   <li><a href="search.php">Search</a></li>
-		   <li><a href="quick.php">Quick Orders</a></li>
-		  </ul>	
-		</nav>
-	</div>
-<?php include("Includes/inc_footer.php"); ?>
+  <?php 
+	include("Includes/inc_quotes_plus.php");
+	include("Includes/inc_small_nav.php"); 
+	include("Includes/inc_footer.php");
+ ?>
 </div>
 </body>
 </html>

@@ -63,28 +63,10 @@
 		   <p>I tried to make things simple, but with over 500 photos on the site, and many options for each picture, feel free to <a href="contact.php">contact me</a> any time with questions or comments, or just to talk shop.</p>
            <img src="Pictures/CardsLayedOut.jpg" />
   </div>
-  	<div id="quotenotes">
-		<p>"To be sinless is to be small."</p>
-	</div>
-	<hr width="20%" align="right" class="hidesmall" />
-    <hr width="40%" align="right" class="hidesmall" />
-    <hr width="60%" align="right" class="hidesmall" />
-    <hr width="80%" align="right" class="hidesmall" />
-   <div class="smallnav">
-	   &nbsp;
-		<nav>
-		  <ul>
-		   <li><a href="index.php">Home</a></li>
-		   <li><a href="about.php">About</a></li>
-		   <li><a href="galleries.php">Galleries</a></li>
-		   <li><a href="license.php">License/Prints</a></li>
-		   <li><a href="blog" target="_blank">Blog</a></li> 
-		   <li><a href="contact.php">Contact</a></li>
-		   <li><a href="search.php">Search</a></li>
-		   <li><a href="quick.php">Quick Orders</a></li>
-		  </ul>	
-		</nav>
-	</div>
-  <?php include("Includes/inc_footer.php"); ?>
+ <?php 
+	include("Includes/inc_quotes_plus.php");
+	include("Includes/inc_small_nav.php"); 
+	include("Includes/inc_footer.php");
+ ?>
 </div>
 </body>

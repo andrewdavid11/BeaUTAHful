@@ -70,6 +70,7 @@
 	  <input type="text" name="ship-state" maxlength="2" size="1" value="<?= $shipState; ?>"/><br />
 	  <strong>Zip:</strong><br />
 	  <input type="text" name="ship-zip" maxlength="11" size="7" value="<?= $shipZip; ?>"/><br /><br />
+	  <input type="hidden" name="shipping-submitted" value="yes" />
 	  <input type="button" value="Return to Cart" onclick="history.go(-1);return true;"/>
 	  <input type="submit" value="Submit" name="shipping-submit" class="button" />
 	</p>

@@ -51,22 +51,10 @@
       I created this site all by my lonesome to document my adventures, and to display my coding and Web design skills.</p>
       <p>Love my site and my style? Want to hire me? Then start at the <a href="about.php">About Page</a>.</p>
   </div>
-  <div class="smallnav">
-	  &nbsp;
-    <nav>
-	  <ul>
-	   <li><a href="index.php">Home</a></li>
-	   <li><a href="about.php">About</a></li>
-	   <li><a href="galleries.php">Galleries</a></li>
-	   <li><a href="licensing.php">License/Prints</a></li>
-	   <li><a href="blog" target="_blank">Blog</a></li> 
-	   <li><a href="contact.php">Contact</a></li>
-	   <li><a href="search.php">Search</a></li>
-	   <li><a href="quick.php">Quick Orders</a></li>
-	  </ul>	
-    </nav>
-  </div>
-  <?php include("Includes/inc_footer.php"); ?>
+  <?php 
+	include("Includes/inc_small_nav.php"); 
+	include("Includes/inc_footer.php");
+  ?>
 </div>
 </body>
 </html>
