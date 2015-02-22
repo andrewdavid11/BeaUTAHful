@@ -20,23 +20,7 @@
   </head>
 <body onload="displayQuote();">
 <div class="container">
- <div class="leftColumn">
- 	<div class="logo">
- 	  <a href="index.php"><img src="Thumbs/ShadowLogoSep.jpg" width="100" height="75" /></a>
- 	</div>
-   <nav>
-	  <ul>
-	   <li class="onlymedium"><a href="index.php">Home</a></li>
-	   <li><a href="about.php">About</a></li>
-	   <li><a href="galleries.php">Galleries</a></li>
-	   <li><a href="licensing.php">License/Prints</a></li>
-	   <li><a href="blog" target="_blank">Blog</a></li> 
-	   <li><a href="contact.php">Contact</a></li>
-	   <li><a href="search.php">Search</a></li>
-	   <li><a href="quick.php">Quick Orders</a></li>
-	  </ul>	
-    </nav>
-  </div>
+  <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
   	<h1>My Favorite Galleries</h1>
   	  <p>The top gallery on this page will always be my most recently added photos.<br />
