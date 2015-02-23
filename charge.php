@@ -7,7 +7,7 @@
   "http://www.w3.org/TR/xhtml1-strict.dtd">
 <html xmlns="http://www.w3/org/1999/xhtml">
 <head>
-  <title>Checkout: Provide Shipping Information</title>
+  <title>Order Completion: Thank you for your Order</title>
   <link rel="stylesheet" type="text/css" href="hikephotos_styles.css" />
   <link rel="index" title="Hiking and Adventure Photography and Fine Art Prints by Web Designer Andrew David" href="index.php" />
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
@@ -42,12 +42,13 @@
 	  echo '<h3>Successfully charged $' . $amountFixed . '.</h3> 
 	  <p>You will receive an email shortly
 	  to confirm your order, and another with a tracking number when your fine art prints 
-	  are ready to ship.<br />
+	  are on their way by post.<br />
 	  Call 801-300-5549 anytime with questions. Thank you for your business!<br />
 	  Please come again, and tell your friends.</p>';
     }
     else {
-	  echo '<h2>Whoops! There was an error with your payment. Please verify that you have Javascript enabled and try again.</h2>';
+	  echo '<p>Whoops! There was an error with your payment or you did not go through checkout. 
+	  Please verify that you have Javascript enabled and try again.</p>';
 	}
 	
 ?>

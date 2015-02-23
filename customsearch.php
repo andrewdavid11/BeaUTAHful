@@ -1,15 +1,15 @@
 <?php 
   include("Includes/inc_db.php");
   
-  $x = isset($_GET['simple-search-value']) ? htmlspecialchars($_GET['simple-search-value']) : '';
+  $x = isset($_GET['simple-search-value']) ? mysql_real_escape_string($_GET['simple-search-value']) : '';
   
-  $y = isset($_GET['ad-locate']) ? htmlspecialchars($_GET['ad-locate']) : '';
+  $y = isset($_GET['ad-locate']) ? mysql_real_escape_string($_GET['ad-locate']) : '';
 
   
-  $z = isset($_GET['ad-animal']) ? htmlspecialchars($_GET['ad-animal']) : '';
+  $z = isset($_GET['ad-animal']) ? mysql_real_escape_string($_GET['ad-animal']) : '';
 
   
-  $v = isset($_GET['ad-key']) ? htmlspecialchars($_GET['ad-key']) : '';
+  $v = isset($_GET['ad-key']) ? mysql_real_escape_string($_GET['ad-key']) : '';
   
 
 
@@ -44,7 +44,7 @@
       </p>
       <form method="get" action="customsearch.php" name="searchForm">
 	    <p><input type="text" name="simple-search-value" class="input" placeholder="Your search term here"> 
-		<input type="submit" name="simple-search-submit" value="Search"></p>
+		<input type="submit" name="simple-search-submit" value="Search" class="button"></p>
       </form>
     </div>
     

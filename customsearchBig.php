@@ -1,17 +1,17 @@
 <?php 
   include("Includes/inc_db.php");
   
-  $x = isset($_POST['simple-search-value']) ? htmlspecialchars($_POST['simple-search-value']) : '';
+  $x = isset($_POST['simple-search-value']) ? mysql_real_escape_string($_POST['simple-search-value']) : '';
   $x = trim($x);
   $x = stripslashes($x);
   $x = str_replace(",", "", $x);
   
-  $y = isset($_POST['ad-locate']) ? htmlspecialchars($_POST['ad-locate']) : '';
+  $y = isset($_POST['ad-locate']) ? mysql_real_escape_string($_POST['ad-locate']) : '';
   $y = trim($y);
   $y = stripslashes($y);
   $y = str_replace(",","", $y);
   
-  $z = isset($_POST['ad-color']) ? htmlspecialchars($_POST['ad-color']) : '';
+  $z = isset($_POST['ad-color']) ? mysql_real_escape_string($_POST['ad-color']) : '';
   if (!empty($z)) {
     $z = trim($z);
     $z = stripslashes($z);
@@ -20,7 +20,7 @@
   else 
     $z = 99;
   
-  $w = isset($_POST['ad-animal']) ? htmlspecialchars($_POST['ad-animal']) : '';
+  $w = isset($_POST['ad-animal']) ? mysql_real_escape_string($_POST['ad-animal']) : '';
   if (!empty($w)) {
     $w = trim($w);
     $w = stripslashes($w);
@@ -29,7 +29,7 @@
   else
     $w = 88;
   
-  $v = isset($_POST['ad-key']) ? htmlspecialchars($_POST['ad-key']) : '';
+  $v = isset($_POST['ad-key']) ? mysql_real_escape_string($_POST['ad-key']) : '';
   if (!empty($v))
     $v = trim($v);
     $v = stripslashes($v);
@@ -71,7 +71,7 @@
       </p>
       <form method="post" action="customsearch.php" name="searchForm">
 	    <p><input type="text" name="simple-search-value" class="input" placeholder="Your search term here"> 
-		<input type="submit" name="simple-search-submit" value="Search"></p>
+		<input type="submit" name="simple-search-submit" value="Search" class="button"></p>
       </form>
     </div>
     

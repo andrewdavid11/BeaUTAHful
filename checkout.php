@@ -71,14 +71,24 @@
 	  <strong>Zip:</strong><br />
 	  <input type="text" name="ship-zip" maxlength="11" size="7" value="<?= $shipZip; ?>"/><br /><br />
 	  <input type="hidden" name="shipping-submitted" value="yes" />
-	  <input type="button" value="Return to Cart" onclick="history.go(-1);return true;"/>
+	  
 	  <input type="submit" value="Submit" name="shipping-submit" class="button" />
 	</p>
   </form>
   
+  <p>Or if you wish to <span class="warning">return to your cart</span>, use the button below.</h2>
+  <div id="centralize">
+	 <form method="post" action="cart.php">
+		<input type="submit" value="Return to Cart" class="button" />
+	 </form>
+	 <p>&nbsp;</p>
+  </div>
+ 
+  
+  
   <?php
 		if ($errorCount > 0) {
-			echo "<h4>Please <span class='warning'>re-enter</span> the indicated information below and then <span class='warning'>Submit the form again.</span></h4>";
+			echo "<h4>Please make any <span class='warning'>corrections</span> and then <span class='warning'>Submit the form again.</span></h4>";
 		}
   }
   else {
@@ -105,6 +115,8 @@
     $msg .= "And the details for the customer's order to print and deliver are below: <br /><br />";
     
     $max = count($_SESSION['cart']);
+    
+    //so using a for loop gets me a big batch of errors- try a foreach
     for($i=0; $i<$max; $i++){
 		$j = $i +1;
 		$pid = $_SESSION['cart'][$i]['pid'];
@@ -113,17 +125,19 @@
 		$color = $_SESSION['cart'][$i]['color'];
 		$quant = $_SESSION['cart'][$i]['qty'];
 		$date = date('Y-m-d');
-		$QueryString1 = "INSERT INTO order_details (session_id, date, pic_id, prod_id, color, qty) VALUES ('$sessionID', '$date', '$picID', '$prodID', 'color', '$qty')";
+		$QueryString1 = "INSERT INTO order_details (session_id, date, pic_id, prod_id, color, qty) VALUES ('$sessionID', '$date', '$picID', '$prodID', '$color', '$quant')";
+		$QueryStuff = mysql_query("SELECT size, category FROM products WHERE prodID = '$prodID'");
+		$QueryReturn = mysql_fetch_row($QueryStuff);
+		
 		$AddtoDB1= @mysql_query($QueryString1, $DBTap);
 		$msg .= "Item Number " . $j . ": <br />";
 		$msg .= "Photo Number " . $picID . "<br />";
-		$msg .= "As " . $prodID . "<br />";
+		$msg .= "As a " . $QueryReturn[0] . " " . $QueryReturn[1] . "<br />";
 		$msg .= "The color, if specified, is: " . $color . "<br /><br />";
 		
-	}
-    
-    //$msg .=  "Item 1: Stuff<br /><br />" ; 
-    $msg .= "Log into your Stripe account to find the customer's email address and verify proper payment. 
+	} //end my for loop
+		
+		$msg .= "Log into your Stripe account to find the customer's email address and verify proper payment. 
 			 Remember to email an order confirmation pronto, and a tracking number 
 			 and shipping alert when the prints are on their way by post. <br /><br />
 			 Good customer service and good photography will keep your
@@ -149,7 +163,7 @@
       . ", " .$shipState . " " .$shipZip . "\n");
     }
     else {
-		echo "<p>This backup file is not writeable!</p>";
+		//echo "<p>This backup file is not writeable!</p>";
 	}
     fclose($Backup);
     $addressDisplay = $customerFirst . " " . $customerLast . "<br />";
@@ -181,7 +195,7 @@
 
 <?php     
     
-  }
+} //end the else clause for properly submitted forms
 
 ?>
 

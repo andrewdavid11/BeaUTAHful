@@ -12,7 +12,7 @@ function displayAdvancedSearchForm() {
   Advanced += "<input type='text' name='ad-animal' size='50' maxlength='75' placeholder='Your Favorite Animal' ><br />";
   Advanced += "<strong>Keywords or Color</strong><br />";
   Advanced += "<input type='text' name='ad-key' size='50' maxlength='75' placeholder='For examples: \"Full moon\", \"granite\", or \"berries\" or \"blue sky\"' ><br /><br />";
-  Advanced += "<input type='submit' name='advanced-search-submit' value='Search'></p></form>";
+  Advanced += "<input type='submit' name='advanced-search-submit' value='Search' class='button'></p></form>";
   document.getElementById('searchBar').innerHTML = Advanced;
 
 }

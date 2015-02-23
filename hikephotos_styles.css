@@ -400,6 +400,11 @@ span.return:hover {
 	margin-right: auto;
 }
 
+#centralize form {
+	border-bottom: none;
+	border-right: none;
+}
+
 #checkoutOps {
   text-align: center;
   width: 50%;
