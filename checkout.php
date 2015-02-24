@@ -115,8 +115,6 @@
     $msg .= "And the details for the customer's order to print and deliver are below: <br /><br />";
     
     $max = count($_SESSION['cart']);
-    
-    //so using a for loop gets me a big batch of errors- try a foreach
     for($i=0; $i<$max; $i++){
 		$j = $i +1;
 		$pid = $_SESSION['cart'][$i]['pid'];
@@ -169,12 +167,11 @@
     $addressDisplay = $customerFirst . " " . $customerLast . "<br />";
     $addressDisplay .= $shipAddress . "<br />";
     $addressDisplay .= $shipCity . ", " . $shipState . " " . $shipZip;
-    echo "<p style='text-align: center'>" . $addressDisplay . "</p>";
-    echo "<h4 class='warning'>Thank you. If the shipping address above is correct, 
-    let's complete your order with a credit card below!</h4>";
+    echo "<h3>" . $addressDisplay . "</h3>";
     
 ?>
-
+	<h4 class='warning'>Thank you. If the shipping address above is correct, 
+    let's complete your order with a credit card below!</h4>
      <div id="stripecheckout"> 
 		  
 		 <!--moved above <?php //require_once('./config.php'); ?> moved above--> 
@@ -191,6 +188,13 @@
 				data-zip-code="true">
 			  </script>
 		  </form>
+    </div>
+    <h4>Or, if you need to make corrections to your shipping address before continuing, use this button.</h4>
+    <div id="centralize">
+	  <form method="post" action="checkout.php">
+		<input type="submit" value="Correct Shipping" class="button" />
+	  </form>
+	  <p>&nbsp;</p>
     </div>
 
 <?php     

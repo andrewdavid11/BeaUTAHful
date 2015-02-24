@@ -38,6 +38,60 @@
 	<hr />
 	<div class="orderForms">
 	   <a name="buy_now"></a>
+	   <h3>Order This Photo on a 4" X 6" Postcard</h3>
+	   <p>I print postcards at home. This is my most affordable option, and is a great way to share my nature photography
+	   with your friends and family.<br />
+	   Postcards are $1.50 each, and are discounted when bought in larger numbers.<br />
+	   5 and 10 packs are available on this page, if you want multiple copies of the same photo card, 
+	   or check out the <a href="Quick">Quick Order</a> Page for variety packs and further savings.
+	   </p>
+	   <form method="post" action="cart.php">
+	     <p>
+	     <select name="BuyPostCard" id="BuyPostCard" class="button_left">
+	       <option value="" selected="selected">PostCard Options</option>
+	       <option value="<?=$ThisPic['ID_num'] ?> | PostCard |">Single PostCard: $1.50</option>
+	       <option value="<?=$ThisPic['ID_num'] ?> | PostCard5 |">5 pack of this Photo: $6.00</option>
+	       <option value="<?=$ThisPic['ID_num'] ?> | PostCard10 |">10 Pack of this Photo: $10.00</option>
+	     </select>&nbsp;
+	     <input type="hidden" name="postcard-submitted" value="yes" /> 
+		 <input type="submit" name="submit-postcard" value="Add to Cart" class="button_right" />
+	     <br /></p>
+	   </form>
+	   <h3>Order This Photo On a 5" X 7" Flip Card</h3>
+	    <p>Many colors are available. This is a great way to sample or share a large number of photos.<br />
+	    Flip cards come on heavyweight premium cardstock paper, with one envelope included for each card.<br />
+	    They can be mailed with a standard stamp, or frame and hang them. No really. They are that nice!<br />
+	    <a href="Pictures/CardFramed.jpg"><img src="Thumbs/CardFramed.jpg" alt="A 5" X 7" flip card hung on the wall above a lamp to good effect." /></a><br />
+	    Single cards are <strong>$3.00 each</strong>. Or check out the <a href="Quick">Quick Order</a> Page for value pack options.<br />
+	    Quick Order Value packs offer further discounts per card. The more you order, the more you save.</p>
+	    <form method="post" action="cart.php"> 
+	  	 <p>
+	     <select name="BuyCard" id="BuyCard" class="button_left">
+	      <option value="" selected="selected">Card Color Options</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Black">Black</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Red">Red</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Burgundy">Burgundy</option>		  
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | BtOrange">Bright Orange</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Orange">Crushed Orange</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Yellow">Yellow</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | DkGreen">Dark Green</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | LtGreen">Light Green</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Dkblue">Dark Blue</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Ltblue">Light Blue</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Purple">Purple</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | White">White</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Silver">Silver</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Grey">Grey</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Brown">Brown</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Tan">Tan</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | HotPink">Hot Pink</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | LtPink">Light Pink</option>
+		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Wild">Surprise Me!</option>
+		</select>&nbsp;
+		<input type="hidden" name="card-submitted" value="yes" /> 
+		<input type="submit" name="submit-card" value="Add to Cart" class="button_right" />
+		<br /></p>
+	  </form>
 	   <h3>Order a Mounted Print of This Photo</h3>
 	   <p>All photos are printed on premium Kodac Luster paper with a matte finish at a local, independent, professional studio. <br />
 	   Prints are mounted to hard board and corners are padded and protected during shipping. The back of each photo is signed.<br />
@@ -97,41 +151,6 @@
 		</select>&nbsp;
 		<input type="hidden" name="metal-submitted" value="yes" />
 		<input type="submit" name="submit-metal" value="Add to Cart" class="button_right" />
-		<br /></p>
-	  </form>
-	  <h3>Order This Photo On a 5" X 7" Flip Card</h3>
-	    <p>Many colors are available. This is a great way to sample or share a large number of photos.<br />
-	    Flip cards come on heavyweight premium cardstock paper, with one envelope included for each card.<br />
-	    They can be mailed with a standard stamp, or frame and hang them. No really. They are that nice.<br />
-	    <a href="Pictures/CardFramed.jpg"><img src="Thumbs/CardFramed.jpg" alt="A 5" X 7" flip card hung on the wall above a lamp to good effect." /></a><br />
-	    Single cards are <strong>$3.00 each</strong>. Or check out the <a href="Quick">Quick Order</a> Page for value pack options.<br />
-	    Quick Order Value packs offer further discounts per card. The more you order, the more you save.</p>
-	    <form method="post" action="cart.php"> 
-	  	 <p>
-	     <select name="BuyCard" id="BuyCard" class="button_left">
-	      <option value="" selected="selected">Card Color Options</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Black">Black</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Red">Red</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Burgundy">Burgundy</option>		  
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | BtOrange">Bright Orange</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Orange">Crushed Orange</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Yellow">Yellow</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | DkGreen">Dark Green</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | LtGreen">Light Green</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Dkblue">Dark Blue</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Ltblue">Light Blue</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Purple">Purple</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | White">White</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Silver">Silver</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Grey">Grey</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Brown">Brown</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Tan">Tan</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | HotPink">Hot Pink</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | LtPink">Light Pink</option>
-		  <option value="<?=$ThisPic['ID_num'] ?> | Card | Wild">Surprise Me!</option>
-		</select>&nbsp;
-		<input type="hidden" name="card-submitted" value="yes" /> 
-		<input type="submit" name="submit-card" value="Add to Cart" class="button_right" />
 		<br /></p>
 	  </form>
 	  <div class=" centerfloatDetails redgreytearReverse">

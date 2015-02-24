@@ -10,6 +10,7 @@
     $canvases = isset($_POST['canvas-submitted']) ? $_POST['canvas-submitted'] : '';
     $metals = isset($_POST['metal-submitted']) ? $_POST['metal-submitted'] : '';
     $cards = isset($_POST['card-submitted']) ? $_POST['card-submitted'] : '';
+    $postcards = isset($_POST['postcard-submitted']) ? $_POST['postcard-submitted'] : '';
     $canpanos = isset($_POST['canpan-submitted']) ? $_POST['canpan-submitted'] : '';
     $metpanos = isset($_POST['metpan-submitted']) ? $_POST['metpan-submitted'] : '';
     $card10 = isset($_POST['card10-submitted']) ? $_POST['card10-submitted'] : '';
@@ -31,6 +32,8 @@
       $pid = $_POST['BuyMetal'];
     elseif($cards == "yes")
       $pid = $_POST['BuyCard'];
+    elseif($postcards == "yes")
+	  $pid = $_POST['BuyPostCard'];
     elseif($canpanos == "yes")
       $pid = $_POST['BuyCanPan'];
     elseif($metpanos == "yes")
