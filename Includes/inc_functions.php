@@ -115,23 +115,28 @@
 	    $next=count($_SESSION['cart']);
 	    $sum=0;
 	    $code = isset($_SESSION['discountCode']) ? $_SESSION['discountCode'] : '';
-	    $disc = 1.0; //set this as default
-	    //below I control the value of the ratio in set cases
-	    if ($code == 'poetry') {
-			$disc = 0.7;
-		}
-		if ($code == 'hippo') {
-			$disc = 0.8;
-		}
+	    $disc = 1.0; //set this as no discount
+	    $cardDisc = 1.0; //set this as no discount
+	    $cardCount = 0;
 	    for ($i=0; $i<$next; $i++) {
 	      $prodID=$_SESSION['cart'][$i]['prodID'];
 	      $qty=$_SESSION['cart'][$i]['qty'];
 	      $price=get_price($prodID);
 	      $sum+=$price*$qty;  
+	      if($prodID == 'Card' OR $prodID == 'PostCard')
+			  $cardCount++;
 	    }
+		if ($code == 'hippo') {
+			$disc = 0.75;
+		}
+		/*if ($cardCount >= 10) {
+			$cardDisc = 0.85;
+			* would need to cycle back around to apply this to only the cards, and then retotal the sum
+			* not worth it for now; complicated coding!
+		}*/
 	    $sum = $sum*$disc;
 	    //$_SESSION['orderTotal'] = '$' . number_format($sum,2);
-	    $_SESSION['orderTotal'] = $sum*100;
+	    $_SESSION['orderTotal'] = $sum*100; //convert to cents for Stripe, as required
 	    $_SESSION['orderTotalPretty'] = '$' . number_format($_SESSION['orderTotal']/100,2);
 	    return number_format($sum, 2);
 	  }
