@@ -27,7 +27,7 @@
     <img src="Thumbs/preppypose.jpg" alt="Andrew David smiles in a collared shirt with a sweater overlayer on a rare day not outside" />
   </div>
     <div id="address" class="redgreytear">
-    <p>Andrew David<br />
+    <p>Andrew David Hodgson<br />
        Hikephotos.com<br />
 	   453 W 1500 S #609<br />
 	   Bountiful, UT 84010<br /><br />
@@ -41,7 +41,7 @@
   <p>If I do not reply the same day, I am out on adventure away from cellular service, and will get back to you as soon as I reach civilization.</p>
   
   <div id="contactForm">
-	  <h2>Message Andrew</h2>
+	  <h2>Message Andrew and Sarah</h2>
 
 <?php 
 

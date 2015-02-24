@@ -42,16 +42,13 @@
 	   <p>I print postcards at home. This is my most affordable option, and is a great way to share my nature photography
 	   with your friends and family.<br />
 	   Postcards are $1.50 each, and are discounted when bought in larger numbers.<br />
-	   5 and 10 packs are available on this page, if you want multiple copies of the same photo card, 
-	   or check out the <a href="Quick">Quick Order</a> Page for variety packs and further savings.
+	   Check out the <a href="Quick">Quick Order</a> Page for variety packs and savings.
 	   </p>
 	   <form method="post" action="cart.php">
 	     <p>
 	     <select name="BuyPostCard" id="BuyPostCard" class="button_left">
 	       <option value="" selected="selected">PostCard Options</option>
 	       <option value="<?=$ThisPic['ID_num'] ?> | PostCard |">Single PostCard: $1.50</option>
-	       <option value="<?=$ThisPic['ID_num'] ?> | PostCard5 |">5 pack of this Photo: $6.00</option>
-	       <option value="<?=$ThisPic['ID_num'] ?> | PostCard10 |">10 Pack of this Photo: $10.00</option>
 	     </select>&nbsp;
 	     <input type="hidden" name="postcard-submitted" value="yes" /> 
 		 <input type="submit" name="submit-postcard" value="Add to Cart" class="button_right" />

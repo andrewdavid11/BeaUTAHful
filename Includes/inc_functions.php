@@ -118,7 +118,7 @@
 	    $disc = 1.0; //set this as default
 	    //below I control the value of the ratio in set cases
 	    if ($code == 'poetry') {
-			$disc = 0.6;
+			$disc = 0.7;
 		}
 		if ($code == 'hippo') {
 			$disc = 0.8;

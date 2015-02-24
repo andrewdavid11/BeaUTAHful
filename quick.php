@@ -32,13 +32,13 @@
       </p>
       <hr />
       <h3>10 Post Card Packs</h3>
-        <p>10 Unique 4" X 6" Post Cards from the theme of your choice. Lots of options. Packs are $10.00, for a price of $1.00 per card.<br />
+        <p>10 Unique 4" X 6" Post Cards from the theme of your choice. Lots of options. Packs are $12.50, for a price of $1.25 per card.<br />
         All cards unique. (No photo used more than once.)<br />
         </p>
 	      <form method="post" action="cart.php">
 			<p>
 			  <select name="BuyPostCard10" class="button_left">
-				  <option value="" selected="selected">10 Card Value Packs: $25.00 ($2.50 per card)</option>
+				  <option value="" selected="selected">10 Card Value Packs: $12.50 ($1.25 per card)</option>
 				  <option value="1001 | PostCard10 | Utah">Utah Pack</option>
 				  <option value="1001 | PostCard10 | Colorado">Colorado Pack</option>
 				  <option value="1001 | PostCard10 | Sawtooths">Idaho Sawtooths Pack</option>
@@ -68,13 +68,13 @@
 			</p>
 		  </form>
 	<h3>25 Post Card Packs</h3>  
-		   <p>25 unique 4" X 6" Post Cards from the category of your choice. These packs are $20 each, or $0.80 per card.
+		   <p>25 unique 4" X 6" Post Cards from the category of your choice. These packs are $25 each, or $1.00 per card.
 		   All cards unique. (No photo is used multiple times.)<br />
 		   </p>
 		   <form method="post" action="cart.php">
 			<p>
 			  <select name="BuyPostCard25" class="button_left">
-				  <option value="" selected="selected">25 Card Value Pack Options: $50.00 ($2 per card)</option>
+				  <option value="" selected="selected">25 Card Value Pack Options: $25.00 ($1 per card)</option>
 				  <option value="1001 | PostCard25 | Utah">Utah Pack</option>
 				  <option value="1001 | PostCard25 | Colorado">ColoradoPack</option>
 				  <option value="1001 | PostCard25 | Sawtooths">Sawtooths Pack</option>
@@ -96,7 +96,7 @@
 		   
 	   <h3>50 Post Card Packs</h3>	
 	     <p>50 unique 4" X 6" Post Cards from the category of your choice.<br />
-	     I have fewer options on these listed, due to my no duplicates policy. These are $35, or $0.70 per card.<br />
+	     I have fewer options on these listed, due to my no duplicates policy. These are $37.50, or $0.75 per card.<br />
 	     All cards unique. (No photo used more than once.)
 	     </p>	
 	     <p>For larger orders than I have listed here <a href="contact.php">contact me</a>. 
@@ -104,7 +104,7 @@
 		 <form method="post" action="cart.php">
 			<p>
 			  <select name="BuyPostCard50" class="button_left">
-				  <option value="" selected="selected">50 Card Value Pack Options: $75.00 ($1.50 each)</option>
+				  <option value="" selected="selected">50 Card Value Pack Options: $37.50 ($0.75 each)</option>
 				  <option value="1001 | PostCard50 | Utah">Utah Pack</option>
 				  <option value="1001 | PostCard50 | Rockies">Rocky Mountain Pack</option>
 				  <option value="1001 | PostCard50 | Southwest">Southwest Pack</option>

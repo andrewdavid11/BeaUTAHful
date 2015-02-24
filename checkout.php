@@ -31,6 +31,7 @@
   $shipCity = "";
   $shipState = "";
   $shipZip = "";
+  $shipSpecial = "";
   $sessionID = session_id();
 
   if (isset($_POST['shipping-submit'])) {
@@ -42,7 +43,7 @@
       $shipZip = validateZip($_POST['ship-zip'], 'Your Zip Code');
       $shipSpecial = validateSpecial($_POST['ship-special']);
       
-      if ($errorCount == 0) {  
+      if ($errorCount == 0 AND empty($_POST['fix-shipping-submitted'])) {  
         $DisplayShippingForm = FALSE; 
       }
       else {
@@ -51,6 +52,11 @@
     }
 
     if ($DisplayShippingForm == TRUE) {
+		if(empty($_SESSION['cart'])){
+			echo "<h3 class='warning'>Your cart is empty, so you cannot checkout!</h3>";
+			echo "<p>Check out the <a style='color: yellow' href='galleries.php'>Galleries</a>, <a style='color: yellow' href='quick.php'>Quick Orders</a> or <a style='color: yellow' href='search.php'>Search</a> pages to find great products!</p>";
+		}
+		else{
 
 ?>
 
@@ -70,11 +76,10 @@
 	  <strong>State</strong><br />
 	  <input type="text" name="ship-state" maxlength="2" size="1" value="<?= $shipState; ?>"/><br />
 	  <strong>Zip:</strong><br />
-	  <input type="text" name="ship-zip" maxlength="11" size="7" value="<?= $shipZip; ?>"/><br /><br />
+	  <input type="text" name="ship-zip" maxlength="11" size="7" value="<?= $shipZip; ?>"/><br />
 	  <strong>Special Instructions (if any): </strong><br />
-	  <input type="text" name="ship-special" maxlength="100" size="50" value="<?= $shipSpecial; ?>"/><br />
+	  <input type="text" name="ship-special" maxlength="100" size="50" value="<?= $shipSpecial; ?>"/><br /><br />
 	  <input type="hidden" name="shipping-submitted" value="yes" />
-	  
 	  <input type="submit" value="Submit" name="shipping-submit" class="button" />
 	</p>
   </form>
@@ -93,6 +98,7 @@
 		if ($errorCount > 0) {
 			echo "<h4>Please make any <span class='warning'>corrections</span> and then <span class='warning'>Submit the form again.</span></h4>";
 		}
+	}
   }
   else {
 	  require_once('./config.php'); //adding this here for the stripe payment button
@@ -114,7 +120,7 @@
     $msg .= "The order total is $" . $totalBucks . ".<br />";
     $msg .= "This order will ship to : " . $customerFirst . " " . $customerLast . ".<br />";
     $msg .= "The destination street address to ship to is : " . $shipAddress . "<br />";
-    $msg .= "The city, state, and zip code to ship to are: " .$shipCity . ", " . $shipState . " " . $shipZip .".<br />"
+    $msg .= "The city, state, and zip code to ship to are: " .$shipCity . ", " . $shipState . " " . $shipZip .".<br />";
     $msg .= "The special instructions, if any, read: " .$shipSpecial. ".<br /><br />";
     $msg .= "And the details for the customer's shopping cart to print and deliver are below: <br /><br />";
     
@@ -196,6 +202,7 @@
     <h4>Or, if you need to make corrections to your shipping address before continuing, use this button.</h4>
     <div id="centralize">
 	  <form method="post" action="checkout.php">
+		<input type="hidden" name="fix-shipping-submitted" value="yes" />  
 		<input type="submit" value="Correct Shipping" class="button" />
 	  </form>
 	  <p>&nbsp;</p>

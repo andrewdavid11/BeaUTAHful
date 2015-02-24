@@ -16,6 +16,9 @@
     $card10 = isset($_POST['card10-submitted']) ? $_POST['card10-submitted'] : '';
     $card25 = isset($_POST['card25-submitted']) ? $_POST['card25-submitted'] : '';
     $card50 = isset($_POST['card50-submitted']) ? $_POST['card50-submitted'] : '';
+    $postcard10 = isset($_POST['postcard10-submitted']) ? $_POST['postcard10-submitted'] : '';
+    $postcard25 = isset($_POST['postcard25-submitted']) ? $_POST['postcard25-submitted'] : '';
+    $postcard50 = isset($_POST['postcard50-submitted']) ? $_POST['postcard50-submitted'] : '';
     $posters3= isset($_POST['poster3-submitted']) ? $_POST['poster3-submitted'] : '';
     $command = isset($_POST['command']) ? $_POST['command'] : '';
     $discount = isset($_POST['discountCode']) ? $_POST['discountCode'] : '';
@@ -44,6 +47,13 @@
       $pid = $_POST['BuyCard25']; 
     elseif($card50 == "yes")
       $pid = $_POST['BuyCard50']; 
+     elseif($postcard10 == "yes")
+      $pid = $_POST['BuyPostCard10'];
+    elseif($postcard25 == "yes")
+      $pid = $_POST['BuyPostCard25']; 
+    elseif($postcard50 == "yes")
+      $pid = $_POST['BuyPostCard50']; 
+      
     elseif($posters3 == "yes")
       $pid = $_POST['BuyPoster3'];
     else
@@ -260,8 +270,8 @@
 
       } //ends the if block to display the cart as table
       else {
-        echo "<p> Your cart is empty. <br />
-        Check out the <a style='color: yellow' href='galleries.php'>Galleries</a> or <a style='color: yellow' href='search.php'>Search</a> pages to find great products!</p>";
+        echo "<p> Your cart is empty, so there is nothing to display!<br />
+        Check out the <a style='color: yellow' href='galleries.php'>Galleries</a>, <a style='color: yellow' href='quick.php'>Quick Orders</a> or <a style='color: yellow' href='search.php'>Search</a> pages to find great products!</p>";
       }
 
     ?>
