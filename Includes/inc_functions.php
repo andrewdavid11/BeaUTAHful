@@ -54,6 +54,18 @@
 	    }
 		 return $retval; 
 	  }
+	  
+	function validateSpecial($value) {
+	    if (empty($value)) {
+	      $retval = "";
+	    }
+	    else {
+	       $retval = trim($value);
+	       $retval = stripslashes($value);
+	       $retval = htmlspecialchars($value);
+	    }
+	    return $retval;
+	  }  
 
 
     function validateInfo2($value, $fieldName) {

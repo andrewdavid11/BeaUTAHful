@@ -40,6 +40,7 @@
       $shipCity= validateInfo($_POST['ship-city'], 'Your City');
       $shipState = validateInfo($_POST['ship-state'], 'Your State');
       $shipZip = validateZip($_POST['ship-zip'], 'Your Zip Code');
+      $shipSpecial = validateSpecial($_POST['ship-special']);
       
       if ($errorCount == 0) {  
         $DisplayShippingForm = FALSE; 
@@ -70,6 +71,8 @@
 	  <input type="text" name="ship-state" maxlength="2" size="1" value="<?= $shipState; ?>"/><br />
 	  <strong>Zip:</strong><br />
 	  <input type="text" name="ship-zip" maxlength="11" size="7" value="<?= $shipZip; ?>"/><br /><br />
+	  <strong>Special Instructions (if any): </strong><br />
+	  <input type="text" name="ship-special" maxlength="100" size="50" value="<?= $shipSpecial; ?>"/><br />
 	  <input type="hidden" name="shipping-submitted" value="yes" />
 	  
 	  <input type="submit" value="Submit" name="shipping-submit" class="button" />
@@ -107,12 +110,13 @@
     $totalBucks = $_SESSION['orderTotal'] / 100 ;
 
     $msg = "Congratulations Andrew and Sarah, you just got a new order through your website, hikephotos.com.<br />";
-    $msg .= "This order was completed and paid on " . $date . ".<br />";
+    $msg .= "This order was placed on " . $date . ".<br />";
     $msg .= "The order total is $" . $totalBucks . ".<br />";
     $msg .= "This order will ship to : " . $customerFirst . " " . $customerLast . ".<br />";
     $msg .= "The destination street address to ship to is : " . $shipAddress . "<br />";
-    $msg .= "The city, state, and zip code to ship to are: " .$shipCity . ", " . $shipState . " " . $shipZip .".<br /><br />";
-    $msg .= "And the details for the customer's order to print and deliver are below: <br /><br />";
+    $msg .= "The city, state, and zip code to ship to are: " .$shipCity . ", " . $shipState . " " . $shipZip .".<br />"
+    $msg .= "The special instructions, if any, read: " .$shipSpecial. ".<br /><br />";
+    $msg .= "And the details for the customer's shopping cart to print and deliver are below: <br /><br />";
     
     $max = count($_SESSION['cart']);
     for($i=0; $i<$max; $i++){
@@ -135,8 +139,8 @@
 		
 	} //end my for loop
 		
-		$msg .= "Log into your Stripe account to find the customer's email address and verify proper payment. 
-			 Remember to email an order confirmation pronto, and a tracking number 
+		$msg .= "Log into your Stripe account to find the customer's email address and verify proper payment.
+			 If this shopping cart was not dumped, remember to email an order confirmation pronto, and a tracking number 
 			 and shipping alert when the prints are on their way by post. <br /><br />
 			 Good customer service and good photography will keep your
 			 customers coming back!<br /><br />";
