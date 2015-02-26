@@ -140,6 +140,14 @@
 	    $_SESSION['orderTotalPretty'] = '$' . number_format($_SESSION['orderTotal']/100,2);
 	    return number_format($sum, 2);
 	  }
+	  
+  function displayCartCount() {
+	 $cartItems = 0;
+	 if(!empty($_SESSION['cart'])){
+		 $cartItems = count($_SESSION['cart']);	 
+	 }
+	 return $cartItems;
+  } //close the function
 
 
 /*function remove_product($pid){

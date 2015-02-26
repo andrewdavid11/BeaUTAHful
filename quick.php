@@ -22,6 +22,10 @@
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
+	<div class="cart_icon">
+	  <p><?=displayCartCount()?></p>
+	  <a href="cart.php"><img src="Thumbs/cart1.png" width="75" height="75" /></a>
+ 	</div>  
     <h1>Quick Ordering</h1>
       <p>This page is best for return customers already familiar with my products and in a hurry. For more details about my products, or to leisurely view individual photos, try the 
       <a href="search.php">Search</a> or <a href="galleries.php">Galleries</a> pages.</p>

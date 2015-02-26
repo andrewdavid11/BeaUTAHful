@@ -18,6 +18,10 @@
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
+	  <div class="cart_icon">
+		<p><?=displayCartCount()?></p>
+		<a href="cart.php"><img src="Thumbs/cart1.png" width="75" height="75" /></a>
+ 	  </div>
 	  <h1>Licensing and Contracts</h1>
 	       <img src="Pictures/WallPrintsA.jpg" />
 		   <p>If you are interested in using my photography for any reason, that sounds great to me. I do not have 

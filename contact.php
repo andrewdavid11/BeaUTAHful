@@ -22,6 +22,10 @@
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
+	<div class="cart_icon">
+	  <p><?=displayCartCount()?></p>
+	  <a href="cart.php"><img src="Thumbs/cart1.png" width="75" height="75" /></a>
+ 	</div>
     <h1>Contact Info</h1>
      <div id="contactPic">
     <img src="Thumbs/preppypose.jpg" alt="Andrew David smiles in a collared shirt with a sweater overlayer on a rare day not outside" />

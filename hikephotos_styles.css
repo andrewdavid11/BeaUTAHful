@@ -8,7 +8,7 @@ a {
 a.buy_now {
 	color: #fff;
 	float: right;
-	padding-right: 0.33em;
+	padding-right: 10em;
 }
 
 body {
@@ -237,6 +237,24 @@ span.return:hover {
 	padding-bottom: 5px;
 }
 
+.cart_icon {
+	/*border: 1px solid yellow;*/
+	position: absolute;
+	top: 5px;
+	right: 15px;
+}
+
+.cart_icon img {
+	border-left: none;
+	border-top: none;
+}
+
+.cart_icon p {
+	position: absolute;
+	top: -7px;
+	right: 45px;
+}
+
 .cartTop {
 	color: white;
 	text-align: center;
@@ -271,8 +289,6 @@ span.return:hover {
 	background-color: #000000;
 	margin: 0 auto;
 }
-
-
 
 .GalleryThumb {
 	max-width: 250px;
@@ -557,7 +573,12 @@ nav li {
 	.bigWrapPan img {
 		max-width: 400px;
 	}
-	
+
+.cart_icon {
+	postion: absolute;
+	top: 110px;
+	right: 15px;
+}
 	
 .leftColumn {
   width: 100%;
@@ -666,6 +687,11 @@ nav li {
 
 .button_left {
   margin-bottom: 0.5em;
+}
+
+.cart_icon {
+	top: -3px;
+	right: -5px;
 }
 	
 .leftColumn {

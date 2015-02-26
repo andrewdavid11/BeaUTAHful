@@ -1,5 +1,6 @@
 <?php 
   session_start();
+  include("Includes/inc_functions.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1-strict.dtd">
@@ -21,6 +22,10 @@
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
+	<div class="cart_icon">
+	  <p><?=displayCartCount()?></p>
+	  <a href="cart.php"><img src="Thumbs/cart1.png" width="75" height="75" /></a>
+ 	</div>
 	<h1>A Little Background Information</h1>
 		<img src="Pictures/WithRollins.jpg" alt="Andrew David waters his pet tree, Rollins, with a blender full of water on his patio." />
 	<h2>About Andrew, Sarah, and Hikephotos.com</h2>

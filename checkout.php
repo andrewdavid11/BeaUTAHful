@@ -25,13 +25,13 @@
 
   $DisplayShippingForm = TRUE;
   $errorCount = 0;
-  $customerFirst = "";
-  $customerLast = "";
-  $shipAddress = "";
-  $shipCity = "";
-  $shipState = "";
-  $shipZip = "";
-  $shipSpecial = "";
+  $customerFirst = isset($_POST['ship-name-first']) ? $_POST['ship-name-first'] : '';
+  $customerLast = isset($_POST['ship-name-last']) ? $_POST['ship-name-last'] : '';
+  $shipAddress = isset($_POST['ship-address']) ? $_POST['ship-address'] : '';
+  $shipCity = isset($_POST['ship-city']) ? $_POST['ship-city'] : '';
+  $shipState = isset($_POST['ship-state']) ? $_POST['ship-state'] : '';
+  $shipZip = isset($_POST['ship-zip']) ? $_POST['ship-zip'] : '';
+  $shipSpecial = isset($_POST['ship-special']) ? $_POST['ship-special'] : '';
   $sessionID = session_id();
 
   if (isset($_POST['shipping-submit'])) {
