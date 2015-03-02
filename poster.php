@@ -24,10 +24,7 @@
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
-	<div class="cart_icon">
-	  <p><?=displayCartCount()?></p>
-	  <a href="cart.php"><img src="Thumbs/cart1.png" width="75" height="75" /></a>
- 	</div>
+	<?php include("Includes/inc_cart_counter.php"); ?> 
     <p><span class="return" onclick="history.go(-1);return true;">Go Back</span>
     <a class="buy_now" href="#buy_now">Buy This Poster</a></p>
     <div class="bigPicWrap">

@@ -23,10 +23,7 @@
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
-	<div class="cart_icon">
-	  <p><?=displayCartCount()?></p>
-	  <a href="cart.php"><img src="Thumbs/cart1.png" width="75" height="75" /></a>
- 	</div>
+	<?php include("Includes/inc_cart_counter.php"); ?> 
   	<h1>My Favorite Galleries</h1>
   	  <p>The top gallery on this page will always be my most recently added photos.<br />
   	  You can also use the <a href="search.php">search page</a> to view many more galleries, run your own searches by keyword or location, and view the more than 600 photos I have on this site.<br />

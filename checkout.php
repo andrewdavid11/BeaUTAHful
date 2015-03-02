@@ -150,7 +150,8 @@
 			 and shipping alert when the prints are on their way by post. <br /><br />
 			 Good customer service and good photography will keep your
 			 customers coming back!<br /><br />";
-    //$result = mail($to, $subject, $msg);
+    $result = mail($to, $subject, $msg);
+    /* all this below was used for testing and display in the browser
     $result = true;
     if ($result) {
 		echo "<p>" .$subject . "</p>";
@@ -160,6 +161,7 @@
     else {
       echo "<h4 class='warning'>There was a problem sending the new order message. Sigh. Back to coding.</h4>";
     }
+    */
     $QueryString2 = "INSERT INTO shipAddresses (session_id, firstName, lastName, address, city, state, zip) 
 		VALUES ('$sessionID', '$customerFirst', '$customerLast', '$shipAddress','$shipCity', '$shipState', '$shipZip')";
     $AddtoDB2= @mysql_query($QueryString2, $DBTap);
@@ -170,9 +172,10 @@
       fwrite($Backup, "\n" .$customerFirst . " " .$customerLast . "\n" .$shipAddress . "\n" .$shipCity 
       . ", " .$shipState . " " .$shipZip . "\n");
     }
-    else {
+    /*else {
+     * this is used for testing the backup system- does not work on local due to permissions
 		//echo "<p>This backup file is not writeable!</p>";
-	}
+	}*/
     fclose($Backup);
     $addressDisplay = $customerFirst . " " . $customerLast . "<br />";
     $addressDisplay .= $shipAddress . "<br />";
@@ -186,7 +189,7 @@
 		  
 		 <!--moved above <?php //require_once('Extras/config.php'); ?> moved above--> 
 		  
-		  <form action="charge.php" method="POST">
+		  <form action="https://hikephotos.com/charge.php" method="POST">
 			  <input type="hidden" id="stripeAmount" name="stripeAmount" value="<?php echo $_SESSION['orderTotal'] ?>" />
 			  <script
 				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -202,6 +205,7 @@
     <h4>Or, if you need to make corrections to your shipping address before continuing, use this button.</h4>
     <div class="centralize">
 	  <form method="post" action="checkout.php">
+		&nbsp;&nbsp;
 		<input type="hidden" name="fix-shipping-submitted" value="yes" />  
 		<input type="submit" value="Correct Shipping" class="button" /><br />
 		&nbsp;

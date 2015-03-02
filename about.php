@@ -22,10 +22,7 @@
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
-	<div class="cart_icon">
-	  <p><?=displayCartCount()?></p>
-	  <a href="cart.php"><img src="Thumbs/cart1.png" width="75" height="75" /></a>
- 	</div>
+	<?php include("Includes/inc_cart_counter.php"); ?> 
 	<h1>A Little Background Information</h1>
 		<img src="Pictures/WithRollins.jpg" alt="Andrew David waters his pet tree, Rollins, with a blender full of water on his patio." />
 	<h2>About Andrew, Sarah, and Hikephotos.com</h2>
