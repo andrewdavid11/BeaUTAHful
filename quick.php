@@ -36,7 +36,7 @@
         <p>10 Unique 4" X 6" Post Cards from the theme of your choice. Lots of options. Packs are $12.50, for a price of $1.25 per card.<br />
         All cards unique. (No photo used more than once.)<br />
         </p>
-	      <form method="post" action="cart.php">
+	      <form method="post" action="https://hikephotos.com/cart.php">
 			<p>
 			  <select name="BuyPostCard10" class="button_left">
 				  <option value="" selected="selected">10 Card Value Packs: $12.50 ($1.25 per card)</option>
@@ -72,7 +72,7 @@
 		   <p>25 unique 4" X 6" Post Cards from the category of your choice. These packs are $25 each, or $1.00 per card.
 		   All cards unique. (No photo is used multiple times.)<br />
 		   </p>
-		   <form method="post" action="cart.php">
+		   <form method="post" action="https://hikephotos.com/cart.php">
 			<p>
 			  <select name="BuyPostCard25" class="button_left">
 				  <option value="" selected="selected">25 Card Value Pack Options: $25.00 ($1 per card)</option>
@@ -102,7 +102,7 @@
 	     </p>	
 	     <p>For larger orders than I have listed here <a href="contact.php">contact me</a>. 
 	     </p>	  
-		 <form method="post" action="cart.php">
+		 <form method="post" action="https://hikephotos.com/cart.php">
 			<p>
 			  <select name="BuyPostCard50" class="button_left">
 				  <option value="" selected="selected">50 Card Value Pack Options: $37.50 ($0.75 each)</option>
@@ -134,7 +134,7 @@
         All cards unique. (No photo used more than once.)<br />
         Flip card packs will come in a variety of colors.
         </p>
-	      <form method="post" action="cart.php">
+	      <form method="post" action="https://hikephotos.com/cart.php">
 			<p>
 			  <select name="BuyCard10" class="button_left">
 				  <option value="" selected="selected">10 Card Value Packs: $25.00 ($2.50 per card)</option>
@@ -171,7 +171,7 @@
 		   All cards unique. (No photo is used multiple times.)<br />
 		   Flip cards come in a variety of colors.
 		   </p>
-		   <form method="post" action="cart.php">
+		   <form method="post" action="https://hikephotos.com/cart.php">
 			<p>
 			  <select name="BuyCard25" class="button_left">
 				  <option value="" selected="selected">25 Card Value Pack Options: $50.00 ($2 per card)</option>
@@ -202,7 +202,7 @@
 	     </p>	
 	     <p>For larger orders than I have listed here <a href="contact.php">contact me</a>. 
 	     </p>	  
-		 <form method="post" action="cart.php">
+		 <form method="post" action="https://hikephotos.com/cart.php">
 			<p>
 			  <select name="BuyCard50" class="button_left">
 				  <option value="" selected="selected">50 Card Value Pack Options: $75.00 ($1.50 each)</option>
@@ -226,7 +226,7 @@
 	     To peruse the posters in my lineup for this year, check out the <a href="poster.php">Poster Gallery Page</a>.</p>
 		 <p>Posters are on sale until I clear out my stock. Then I will offer custom designs.These just have not been a great seller for me.
 		 They look great on any wall though, and are a very affordable way to enjoy a broad spectrum of my nature photography.</p>
-		 <form method="post" action="cart.php">
+		 <form method="post" action="https://hikephotos.com/cart.php">
 		   <p>
 			   <select name="BuyPoster3" class="button_left">
 				  <option value="" selected="selected">Collage Poster Bundle Options</option>

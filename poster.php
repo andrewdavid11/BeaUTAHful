@@ -2,8 +2,8 @@
     include("Includes/inc_db.php");
     include("Includes/inc_functions.php");
     $ID = $_GET['ID'];
-    $DBTap = mysql_query("SELECT * FROM posters WHERE ID LIKE '%$ID%'");
-    $ThisPoster = mysql_fetch_array($DBTap, MYSQL_BOTH);
+    $DBTap = @mysql_query("SELECT * FROM posters WHERE ID LIKE '%$ID%'");
+    $ThisPoster = @mysql_fetch_array($DBTap, MYSQL_BOTH);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1-strict.dtd">
@@ -45,7 +45,7 @@
 	       With a set of 3, you get 1 poster free! 
 	       </p>
            <p>Custom posters are available. Contact me with your idea or request.</p>
-	  <form method="post" action="cart.php" >   ?> 
+	  <form method="post" action="https://hikephotos.com/cart.php" >   ?> 
 	  	<p>
 	    <select name="BuyPoster" class="button_left">
 	      <option value="">Collage Options</option>

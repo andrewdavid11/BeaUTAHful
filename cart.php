@@ -255,7 +255,7 @@
     <h4>To remove an item from the cart, change its quantity to 0 and then click the "Update Cart" button.</h4>
     
     <div class="centralize"> <!-- use this to center the checkout button since it is not an image-->
-       <form method="post" action="checkout.php">
+       <form method="post" action="https://www.hikephotos.com/checkout.php">
 		  <input type="submit" name="stripe-checkout" value="Proceed to Checkout" class="button" /><br />
 		  &nbsp;
 	   </form>

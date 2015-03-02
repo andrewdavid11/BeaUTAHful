@@ -29,7 +29,7 @@
 	$amount = isset($_POST['stripeAmount']) ? $POST['stripeAmount'] : '';
 		
 	if(empty($token)) {
-		echo "<h3>You have not gone through checkout.</h3>";
+		echo "<h3>You have not gone through checkout, or there was a problem. Please verify that you have javascript enabled in your browser.</h3>";
 		echo "<p>Check out the <a style='color: yellow' href='galleries.php'>Galleries</a>, <a style='color: yellow' href='quick.php'>Quick Orders</a> or <a style='color: yellow' href='search.php'>Search</a> pages to find great products!</p>";
 	}
 	else {
