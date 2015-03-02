@@ -1,5 +1,6 @@
 <?php 
   include("Includes/inc_db.php");
+  include("Includes/inc_functions.php");
   
   $x = isset($_POST['simple-search-value']) ? mysql_real_escape_string($_POST['simple-search-value']) : '';
   $x = trim($x);

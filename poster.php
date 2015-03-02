@@ -1,5 +1,6 @@
 <?php 
     include("Includes/inc_db.php");
+    include("Includes/inc_functions.php");
     $ID = $_GET['ID'];
     $DBTap = mysql_query("SELECT * FROM posters WHERE ID LIKE '%$ID%'");
     $ThisPoster = mysql_fetch_array($DBTap, MYSQL_BOTH);

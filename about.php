@@ -32,18 +32,21 @@
 		<p>My name is Andrew David, and HikePhotos.com is my site. All the code, layout, design, and maintanence are done in my spare time.
 		Nature and wilderness photography provide a secondary income. All the photos on this site are for sale. Just click or tap a photo to see it larger.</p>
 		<p>I work primarily in Web Design and Development, front and back-end coding, and am also a seasonal postal worker.
-		I love to camp, hike, ski, climb, program, read, cook from scratch, and work on jigsaw puzzles. 
-		I am recently married to a wonderful young woman with many of the same interests.</p>
-		<p>Her name is Sarah and she is definitely my better half. This site and company will take on more of her style and feel
+		I love to camp, hike, ski, climb, program, read, cook from scratch, and work on jigsaw puzzles.</p>
+		<p>I am recently married to a wonderful young woman with many of the same interests.
+		Her name is Sarah and she is definitely my better half. This site and company will take on more of her style and feel
 		in the coming years as we build up our life together. Check out my blog for more about me. Sarah has a great food blog and is a real wizard!</p>
-		<p>You can find us on Tumblr as well.</p>
+		<p>You can find us on Tumblr as well. Run a search for "ActiveGourmet" to follow us. We post some pics of food, recipes, and short 
+		photo updates from our activities.</p>
+		<p>Or check out my full adventure blog here on site. I will be adding an article or trip
+		report each week, as life settles down and gets less busy for me.</p>
 		<p>I am available for hire by the right company, and yes, I take freelance work!</p>
 		<p><a href="Extras/AndrewDavidResume.odt" target="_blank">View my resume</a></p>
 		<p><a href="http://codepen.io/andrewdavid11" target="_blank">Here are a few front-end projects while I build a second site for my full portfolio.</a></p>
 		<p>A freelance website will take 2-6 weeks, depending on the size, scope, and difficulty, and how quickly you get me all the images, copy, and information I need.
 		I am light on experience, and I need to improve my portfolio, so I am working cheap for a limited time.</p>
 		<ul class="centerfloat redgreytear">
-			<li>$250 for a basic information website, or blog</li>
+			<li>$300 for a basic information website with a blog, or a full-scale blog</li>
 			<li>$500 for an e-commerce store with up to 50 items for sale</li>
 			<li>$750 for a fully customized large-scale e-commerce store like this one</li>
 			<li>My rates will be higher and match industry standards, so take advantage and message me soon! Its a great deal while it lasts!</li>

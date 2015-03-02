@@ -98,7 +98,7 @@ var currentPic = 0;
        currentPic =0;
     else
        ++currentPic;
-    document.images[1].src = slideshow[currentPic]['src'];
+    document.images[2].src = slideshow[currentPic]['src'];
     document.getElementById('slideshowLink').href = slideshow[currentPic]['href'];
   }
 

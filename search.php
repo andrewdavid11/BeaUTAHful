@@ -1,5 +1,6 @@
 <?php 
   include("Includes/inc_db.php");
+  include("Includes/inc_functions.php");
   $q = isset($_GET['q']) ? htmlspecialchars($_GET['q']) : '';
   
   $Gallery = mysql_query("SELECT * FROM images WHERE (location LIKE '%$q%' OR keyword LIKE '%$q%') AND orientation NOT LIKE '%W%'");

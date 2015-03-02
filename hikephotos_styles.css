@@ -283,6 +283,17 @@ span.return:hover {
     margin-top: 0.25em;
     text-align: center;
   }
+  
+.centralize {
+	width: 20%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.centralize form {
+	border-bottom: none;
+	border-right: none;
+}
 	
 .container {
 	width: 98%;
@@ -404,22 +415,17 @@ span.return:hover {
    float: left;
 }
 
+#button_sim {
+	text-decoration: none;
+}
+
 #cartTable td {
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px; 
 	border-radius: 30px;
 }
 
-#centralize {
-	width: 20%;
-	margin-left:auto;
-	margin-right: auto;
-}
 
-#centralize form {
-	border-bottom: none;
-	border-right: none;
-}
 
 #checkoutOps {
   text-align: center;

@@ -1,5 +1,6 @@
 <?php 
   include("Includes/inc_db.php");
+  include("Includes/inc_functions.php");
   include("Includes/inc_static_galleries.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"

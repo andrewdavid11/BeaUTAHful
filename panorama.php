@@ -1,5 +1,6 @@
 <?php 
     include("Includes/inc_db.php");
+    include("Includes/inc_functions.php");
     $ID = $_GET['ID_num'];
     $DBTap = mysql_query("SELECT * FROM images WHERE ID_num=$ID");
     $ThisPic = mysql_fetch_array($DBTap, MYSQL_BOTH);

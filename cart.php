@@ -236,7 +236,8 @@
         </tr>
         <tr>
           <td style="text-align: right">
-			  <input type="button" name="back2" value="Return to Shopping" onclick="history.go(-2);return true;" class="button_left" />
+			  <!--<input type="button" name="back2" value="Return to Shopping" onclick="history.go(-2);return true;" class="button_left" />-->
+			  <a id="button_sim" href="galleries.php"><input type="button" name="back2" value="Return to Shopping" class="button_left" /></a>
 		 </td>
           <td colspan="1" style="text-align: center">
             <input type="button" name="emptyCart" value="Empty Cart" onclick="empty_cart();" class="button" />
@@ -253,7 +254,7 @@
     </form>
     <h4>To remove an item from the cart, change its quantity to 0 and then click the "Update Cart" button.</h4>
     
-    <div id="centralize"> <!-- use this to center the checkout button since it is not an image-->
+    <div class="centralize"> <!-- use this to center the checkout button since it is not an image-->
        <form method="post" action="checkout.php">
 		  <input type="submit" name="stripe-checkout" value="Proceed to Checkout" class="button" /><br />
 		  &nbsp;

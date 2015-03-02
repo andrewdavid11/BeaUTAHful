@@ -20,13 +20,19 @@
 </head>
 <body>
  <div class="container">
-
+	<h2>This is a <span class="warning">Payment Verification</span> Page</h2>
 <?php
-	require_once(dirname(__FILE__) . '/config.php');
+	require_once('Extras/config.php');
 	
-	$token = $_POST['stripeToken'];
-	$email = $_POST['stripeEmail'];
-	$amount = $_POST['stripeAmount'];
+	$token = isset($_POST['stripeToken']) ? $_POST['stripeToken'] : '';
+	$email = isset($_POST['stripeEmail']) ? $_POST['stripeEmail'] : '';
+	$amount = isset($_POST['stripeAmount']) ? $POST['stripeAmount'] : '';
+		
+	if(empty($token)) {
+		echo "<h3>You have not gone through checkout.</h3>";
+		echo "<p>Check out the <a style='color: yellow' href='galleries.php'>Galleries</a>, <a style='color: yellow' href='quick.php'>Quick Orders</a> or <a style='color: yellow' href='search.php'>Search</a> pages to find great products!</p>";
+	}
+	else {
 	$customer = Stripe_Customer::create(array(
 	'email' => $email,
 	'card' => $token
@@ -37,19 +43,16 @@
 	'currency' => 'usd'
 	));
 	
-	if($charge) {
-		$amountFixed = $amount / 100;
-	  echo '<h3>Successfully charged $' . $amountFixed . '.</h3> 
-	  <p>You will receive an email shortly
-	  to confirm your order, and another with a tracking number when your fine art prints 
-	  are on their way by post.<br />
-	  Call 801-300-5549 anytime with questions. Thank you for your business!<br />
-	  Please come again, and tell your friends.</p>';
-    }
-    else {
-	  echo '<p>Whoops! There was an error with your payment or you did not go through checkout. 
-	  Please verify that you have Javascript enabled and try again.</p>';
+	  $amountFixed = $amount / 100;
+	  $amountFixed = number_format($amountFixed, 2);
+	  echo '<h2>Successfully charged $' . $amountFixed . '.</h2>';
+	  echo '<h3>You will receive an email shortly to confirm your order, and another with a tracking number when your fine art prints 
+	  are on their way by post.<br />';
+	  echo 'Call <span class="warning">801-300-5549</span> anytime with questions. Thank you for your business!<br />
+	  Please come again, and tell your friends.</h3>';
 	}
+ 
+		
 	
 ?>
   <?php include("Includes/inc_footer.php"); ?>

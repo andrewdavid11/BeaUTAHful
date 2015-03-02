@@ -85,7 +85,7 @@
   </form>
   
   <p>Or if you wish to <span class="warning">return to your cart</span>, use the button below.</h2>
-  <div id="centralize">
+  <div class="centralize">
 	 <form method="post" action="cart.php">
 		<input type="submit" value="Return to Cart" class="button" />
 	 </form>
@@ -101,7 +101,7 @@
 	}
   }
   else {
-	  require_once('./config.php'); //adding this here for the stripe payment button
+	  require_once('Extras/config.php'); //adding this here for the stripe payment button
 	  
 	$customerFirst = ucwords(strtolower(stripslashes($customerFirst)));
     $customerLast = ucwords(strtolower(stripslashes($customerLast)));
@@ -184,13 +184,13 @@
     let's complete your order with a credit card below!</h4>
      <div id="stripecheckout"> 
 		  
-		 <!--moved above <?php //require_once('./config.php'); ?> moved above--> 
+		 <!--moved above <?php //require_once('Extras/config.php'); ?> moved above--> 
 		  
 		  <form action="charge.php" method="POST">
 			  <input type="hidden" id="stripeAmount" name="stripeAmount" value="<?php echo $_SESSION['orderTotal'] ?>" />
 			  <script
 				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-				data-key= "pk_test_ELQnHS75CBvjwriegRC80PXx"
+				data-key="<?php echo $stripe['publishable_key']; ?>"
 				data-amount="<?php echo $_SESSION['orderTotal']; ?>"
 				data-name="HikePhotos.com"
 				data-description="Your Prints Order"
@@ -200,12 +200,12 @@
 		  </form>
     </div>
     <h4>Or, if you need to make corrections to your shipping address before continuing, use this button.</h4>
-    <div id="centralize">
+    <div class="centralize">
 	  <form method="post" action="checkout.php">
 		<input type="hidden" name="fix-shipping-submitted" value="yes" />  
-		<input type="submit" value="Correct Shipping" class="button" />
+		<input type="submit" value="Correct Shipping" class="button" /><br />
+		&nbsp;
 	  </form>
-	  <p>&nbsp;</p>
     </div>
 
 <?php     
