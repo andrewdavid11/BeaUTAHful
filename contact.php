@@ -176,6 +176,7 @@
 	include("Includes/inc_quotes_plus.php");
 	include("Includes/inc_small_nav.php"); 
 	include("Includes/inc_footer.php");
+	include_once("Includes/inc_google_analytics.php");
  ?>
   </div>
   </body>
