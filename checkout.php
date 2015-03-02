@@ -189,7 +189,7 @@
 		  
 		 <!--moved above <?php //require_once('Extras/config.php'); ?> moved above--> 
 		  
-		  <form action="https://hikephotos.com/charge.php" method="POST">
+		  <form action="charge.php" method="POST">
 			  <input type="hidden" id="stripeAmount" name="stripeAmount" value="<?php echo $_SESSION['orderTotal'] ?>" />
 			  <script
 				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
