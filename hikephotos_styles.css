@@ -301,6 +301,12 @@ span.return:hover {
 	margin: 0 auto;
 }
 
+.fb-like {
+	position: relative;
+	left: 30px;
+	/*border: 1px solid yellow;*/
+}
+
 .GalleryThumb {
 	max-width: 250px;
 	max-height: 250px;
@@ -404,6 +410,12 @@ span.return:hover {
 	display: inline-block;
 	max-width: 500px;
 	padding: 20px;
+}
+
+.tumblr_btn {
+	position: relative;
+	top: -23px;
+	left: 5px;
 }
 
 .warning {

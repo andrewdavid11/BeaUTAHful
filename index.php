@@ -21,6 +21,14 @@
   </head>
 <body>
 <body onload="setInterval('SlideshowLaunch()', 2000)">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
@@ -36,11 +44,15 @@
       <p>I spend some of each year out in wild places, sleeping on the ground, getting wet, climbing mountains, hiking, and taking pictures.<br />
       I created this site all by my lonesome to document my adventures, and to display my coding and Web design skills.</p>
       <p>Love my site and my style? Want to hire me? Then start at the <a href="about.php">About Page</a>.</p>
+      <a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('https://platform.tumblr.com/v1/share_1T.png') top left no-repeat transparent; position: relative; left: 20px; top: 4px;">Share on Tumblr</a>
+      <div class="fb-like" data-href="http://www.hikephotos.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
   </div>
   <?php 
 	include("Includes/inc_small_nav.php"); 
 	include("Includes/inc_footer.php");
   ?>
 </div>
+<script src="http://platform.tumblr.com/v1/share.js"></script>
+<script type="text/javascript" async defer  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>

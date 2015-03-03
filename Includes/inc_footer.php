@@ -16,7 +16,8 @@
 		<p>All material and photographs &copy; copyright Andrew David Hodgson, DBA Andrew David. All rights reserved.
 		Website by Andrew David.
 		Andrew David is available for hire and does freelance work.</p>
+		
 		<img id="stripe-img" src="Pictures/solid.png" alt="Powered by Stripe marker"/>
 		<img src="Pictures/SSL.gif" alt="Rapid SSL site seal marker" />
-		
+		<iframe class="tumblr_btn" border="0" scrolling="no" allowtransparency="true" src="http://platform.tumblr.com/v1/follow_button.html?button_type=2&tumblelog=activegourmet&color_scheme=dark" frameborder="0" height="25" width="114"></iframe>
 </footer>
