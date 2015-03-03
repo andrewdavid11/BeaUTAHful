@@ -12,6 +12,7 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<script type="text/javascript" async defer  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 	
 		<p>All material and photographs &copy; copyright Andrew David Hodgson, DBA Andrew David. All rights reserved.
 		Website by Andrew David.

@@ -53,6 +53,6 @@
   ?>
 </div>
 <script src="http://platform.tumblr.com/v1/share.js"></script>
-<script type="text/javascript" async defer  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
 </body>
 </html>
