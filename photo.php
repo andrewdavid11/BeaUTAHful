@@ -45,7 +45,7 @@
 	   Postcards are $1.50 each, and are discounted when bought in larger numbers.<br />
 	   Check out the <a href="Quick">Quick Order</a> Page for variety packs and savings.
 	   </p>
-	   <form method="post" action="https://hikephotos.com/cart.php">
+	   <form method="post" action="cart.php">
 	     <p>
 	     <select name="BuyPostCard" id="BuyPostCard" class="button_left">
 	       <option value="" selected="selected">PostCard Options</option>
@@ -94,7 +94,7 @@
 	   <p>All photos are printed on premium Kodac Luster paper with a matte finish at a local, independent, professional studio. <br />
 	   Prints are mounted to hard board and corners are padded and protected during shipping. The back of each photo is signed.<br />
 	   These traditional prints should be framed before hanging to protect them and extend their life.</p>
-	  <form method="post" action="https://hikephotos.com/cart.php">  
+	  <form method="post" action="cart.php">  
 	  	<p>
 	    <select name="BuyPrint" class="button_left">
 	      <option value="" selected="selected">Print Options</option>
@@ -116,7 +116,7 @@
 	   With a gallery wrap, no frame is needed, and the photo "wraps" around the edges, meeting the wall.<br />
 	   Each canvas gallery wrap will stand approximately 1" out from the wall.
 	   The back of each canvas is signed.</p>
-	  <form method="post" action="https://hikephotos.com/cart.php">
+	  <form method="post" action="cart.php">
 	  	<p>
 	    <select name="BuyCanvas" class="button_left">
 	      <option value="" selected="selected">Canvas Options</option>
@@ -136,7 +136,7 @@
 	    With a gallery wrap, no frame is needed, and the photo "wraps" around the edges of the print, meeting the wall.
 	    Each gallery wrap will stand approximately 1" out from the wall.
 		The back of each metallic gallery wrap is signed.</p>
-	     <form method="post" action="https://hikephotos.com/cart.php">
+	     <form method="post" action="cart.php">
 	  	<p>
 	    <select name="BuyMetal" class="button_left">
 	      <option value="" selected="selected">Metal Options</option>

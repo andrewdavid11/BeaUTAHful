@@ -48,7 +48,7 @@
 		   <p>All panoramas are printed on premium Kodac Luster paper with a matte finish at a local, independent, professional studio.<br />
 		   Panoramas are mounted and the corners are padded for extra protection during shipping.<br />
 		   The back of each panorama print is signed.</p>
-		  <form method="post" action="https://hikephotos.com/cart.php" >
+		  <form method="post" action="cart.php" >
 			<p>
 			<select name="BuyPano" class="button_left">
 			  <option value="" selected="selected">Panorama Print Options</option>
@@ -65,7 +65,7 @@
 	      With a gallery wrap, no frame is needed, and the photo "wraps" around the edges, meeting the wall.<br />
 	      Each canvas gallery wrap will stand approximately 1" out from the wall.
 	      The back of each canvas is signed.</p>
-		  <form method="post" action="https://hikephotos.com/cart.php" >
+		  <form method="post" action="cart.php" >
 			<p>
 			<select name="BuyCanPan" class="button_left">
 			  <option value="" selected="selected">Canvas Panorama Options</option>
@@ -82,7 +82,7 @@
 	       With a gallery wrap, no frame is needed, and the photo "wraps" around the edges of the print, meeting the wall.<br />
 	       Each gallery wrap will stand approximately 1" out from the wall.
 		   The back of each metallic gallery wrap is signed.</p>
-		  <form method="post" action="https://hikephotos.com/cart.php" >
+		  <form method="post" action="cart.php" >
 			<p>
 			<select name="BuyMetPan" class="button_left">
 			  <option value="" selected="selected">Metal Panorama Options</option>

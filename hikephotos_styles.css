@@ -593,9 +593,10 @@ nav li {
 	}
 
 .cart_icon {
-	postion: absolute;
-	top: 110px;
+	position: absolute;
+	top: 10px;
 	right: 15px;
+	
 }
 	
 .leftColumn {
@@ -710,6 +711,7 @@ nav li {
 .cart_icon {
 	top: -3px;
 	right: -5px;
+	
 }
 	
 .leftColumn {

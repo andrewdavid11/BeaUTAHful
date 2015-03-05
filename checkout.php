@@ -86,7 +86,7 @@
   
   <p>Or if you wish to <span class="warning">return to your cart</span>, use the button below.</h2>
   <div class="centralize">
-	 <form method="post" action="https://hikephotos.com/cart.php">
+	 <form method="post" action="cart.php">
 		<input type="submit" value="Return to Cart" class="button" />
 	 </form>
 	 <p>&nbsp;</p>

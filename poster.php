@@ -45,7 +45,7 @@
 	       With a set of 3, you get 1 poster free! 
 	       </p>
            <p>Custom posters are available. Contact me with your idea or request.</p>
-	  <form method="post" action="https://hikephotos.com/cart.php" >   ?> 
+	  <form method="post" action="cart.php" >   ?> 
 	  	<p>
 	    <select name="BuyPoster" class="button_left">
 	      <option value="">Collage Options</option>
