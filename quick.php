@@ -1,5 +1,5 @@
  <?php
-  session_start();
+  include("Includes/inc_db.php");
   include("Includes/inc_functions.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
