@@ -25,7 +25,7 @@
 	
 	$token = isset($_POST['stripeToken']) ? $_POST['stripeToken'] : '';
 	$email = isset($_POST['stripeEmail']) ? $_POST['stripeEmail'] : '';
-	$amount = isset($_POST['stripeAmount']) ? $POST['stripeAmount'] : '';
+	$amount = isset($_POST['stripeAmount']) ? $_POST['stripeAmount'] : '';
 	$customer = '';
 	$charge = '';
 	$amountFixed = '';
@@ -37,7 +37,7 @@
 	else {
 		require_once('Extras/config.php');
 		// Set your secret key: remember to change this to your live secret key in production
-
+        
 		// Get the credit card details submitted by the form
 	$token = $_POST['stripeToken'];	
 	$customer = \Stripe\Customer::create(array(
@@ -86,8 +86,6 @@
 		
 	
 ?>
-
-<h3>Test if this will print</h3>
   <?php include("Includes/inc_footer.php"); ?>
  </div>	
 </body>
