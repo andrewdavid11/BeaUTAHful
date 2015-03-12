@@ -40,19 +40,18 @@
         
 		// Get the credit card details submitted by the form
 	$token = $_POST['stripeToken'];	
-	$customer = \Stripe\Customer::create(array(
+	$customer = Stripe_Customer::create(array(
 	'email' => $email,
 	'card' => $token
 	));
 
 		// Create the charge on Stripe's servers - this will charge the user's card
 	try {
-	$charge = \Stripe\Charge::create(array(
+	$charge = Stripe_Charge::create(array(
 	 "customer" => $customer->id,
 	  "amount" => $amount,
 	  "currency" => "usd",
-	  "source" => $token,
-	  "description" => $email)
+	 )
 	);
 	  echo "Charged " . $amount . " like a charm!";
 	} 
