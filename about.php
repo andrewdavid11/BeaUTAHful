@@ -17,7 +17,7 @@
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
   <script src="Scripts/randomquotes.js"></script>
-  </head>
+</head>
 <body onload="displayQuote();">
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>

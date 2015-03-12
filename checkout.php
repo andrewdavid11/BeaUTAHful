@@ -2,7 +2,7 @@
    include("Includes/inc_db.php"); 
    include("Includes/inc_functions.php");
    
-   ?>
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1-strict.dtd">
 <html xmlns="http://www.w3/org/1999/xhtml">
@@ -121,7 +121,8 @@
     $msg .= "This order will ship to : " . $customerFirst . " " . $customerLast . ".\n";
     $msg .= "The destination street address to ship to is : " . $shipAddress . "\n";
     $msg .= "The city, state, and zip code to ship to are: " .$shipCity . ", " . $shipState . " " . $shipZip .".\n";
-    $msg .= "The special instructions, if any, read: " .$shipSpecial. ".\n\n";
+    $msg .= "The special instructions, if any, read:\n";
+    $msg .= "\"" . $shipSpecial. ".\"\n\n";
     $msg .= "And the details for the customer's shopping cart to print and deliver are below: \n\n";
     
     $max = count($_SESSION['cart']);
@@ -147,7 +148,7 @@
 		
 		$msg .= "Log into your Stripe account to find the customer's email address and verify proper payment.
 			 If this shopping cart was not dumped, remember to email an order confirmation pronto, and a tracking number 
-			 and shipping alert when the prints are on their way by post. <br /><br />
+			 and shipping alert when the prints are on their way by post. \n\n
 			 Good customer service and good photography will keep your
 			 customers coming back!\n\n";
     $result = mail($to, $subject, $msg);
@@ -205,9 +206,9 @@
     <h4>Or, if you need to make corrections to your shipping address before continuing, use this button.</h4>
     <div class="centralize">
 	  <form method="post" action="https://www.hikephotos.com/checkout.php">
-		&nbsp;&nbsp;
-		<input type="hidden" name="fix-shipping-submitted" value="yes" />  
-		<input type="submit" value="Correct Shipping" class="button" /><br />
+		<input type="submit" value="Correct Shipping" class="button" />
+		<input type="hidden" name="fix-shipping-submitted" value="yes" /> 
+		<br />
 		&nbsp;
 	  </form>
     </div>

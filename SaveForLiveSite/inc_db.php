@@ -1,4 +1,4 @@
- <?php  
+<?php  
 	ini_set('session.use_trans_sid', false);
 	ini_set('session.use_cookies', true);
 	ini_set('session.use_only_cookies', true);
@@ -11,4 +11,5 @@
     @mysql_connect("web462.webfaction.com", "andrewdavid", "DATC10toes") or die(mysql_error());
     @mysql_select_db("hikephotos");
     $DBTap = @mysql_connect("web462.webfaction.com", "andrewdavid", "DATC10toes");
- ?>
+    $displaySession = session_id();
+?>

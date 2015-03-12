@@ -1,4 +1,4 @@
- <?php
+<?php
   include("Includes/inc_db.php");
   include("Includes/inc_functions.php");
 ?>
