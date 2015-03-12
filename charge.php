@@ -26,23 +26,25 @@
 	
 	$token = isset($_POST['stripeToken']) ? $_POST['stripeToken'] : '';
 	$email = isset($_POST['stripeEmail']) ? $_POST['stripeEmail'] : '';
-	$amount = isset($_POST['stripeAmount']) ? $POST['stripeAmount'] : '';
+	$amount = isset($_POST['stripeAmount']) ? $_POST['stripeAmount'] : '';
 		
 	if(empty($token)) {
 		echo "<h3>You have not gone through checkout.</h3>";
 		echo "<p>Check out the <a style='color: yellow' href='galleries.php'>Galleries</a>, <a style='color: yellow' href='quick.php'>Quick Orders</a> or <a style='color: yellow' href='search.php'>Search</a> pages to find great products!</p>";
 	}
 	else {
+		//echo "<p>Checkpoint 1 reached</p>";
 	$customer = Stripe_Customer::create(array(
 	'email' => $email,
 	'card' => $token
 	));
+	   //echo "<p>Checkpoint 2 reached</p>";
 	$charge = Stripe_Charge::create(array(
 	'customer' => $customer->id,
 	'amount' => $amount,
 	'currency' => 'usd'
 	));
-	
+	  
 	  $amountFixed = $amount / 100;
 	  $amountFixed = number_format($amountFixed, 2);
 	  echo '<h2>Successfully charged $' . $amountFixed . '.</h2>';
