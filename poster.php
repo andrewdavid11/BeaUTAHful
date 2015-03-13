@@ -2,8 +2,8 @@
     include("Includes/inc_db.php");
     include("Includes/inc_functions.php");
     $ID = $_GET['ID'];
-    $DBTap = mysql_query("SELECT * FROM posters WHERE ID LIKE '%$ID%'");
-    $ThisPoster = mysql_fetch_array($DBTap, MYSQL_BOTH);
+    $DBTap = @mysql_query("SELECT * FROM posters WHERE ID LIKE '%$ID%'");
+    $ThisPoster = @mysql_fetch_array($DBTap, MYSQL_BOTH);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1-strict.dtd">
@@ -55,12 +55,12 @@
 		<input type="submit" name="submit-poster" value="Add to Cart" class="button_right" />
 		<br /></p>
 	  </form> 
-	  <div class="centerfloat redgreytear">
+	  <div class=" centerfloatDetails redgreytearReverse">
 	    <h3>Additional Details</h3>
-		  <p>Free shipping on orders in the United States.</p> 
+		  <p>Free shipping on orders in the United States. If outside the United States, message me before ordering please.</p> 
 		  <p>Most orders will be completed and shipped within 7 days.</p>
 		  <p>Please allow 2-3 weeks for production and delivery of large orders or those that include metallic prints.</p>
-	  </div>   
+	  </div>
 	</div>
   </div>
 <?php 

@@ -1,5 +1,5 @@
- <?php
-  session_start();
+<?php
+  include("Includes/inc_db.php");
   include("Includes/inc_functions.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -238,12 +238,12 @@
 				<input type="submit" name="submit-poster3" value="Add to Cart" class="button_right"/>
 		  </p>
 		</form>
-		<div class="centerfloat redgreytear">
-		  <h3>Additional Details</h3>
-			<p>Free shipping on orders in the United States.</p> 
-		    <p>Most orders will be completed and shipped within 7 days.</p>
-		    <p>Please allow 2-3 weeks for production and delivery of large orders or those that include metallic prints.</p>
-	    </div>
+	  <div class=" centerfloatDetails redgreytearReverse">
+	    <h3>Additional Details</h3>
+		  <p>Free shipping on orders in the United States. If outside the United States, message me before ordering please.</p> 
+		  <p>Most orders will be completed and shipped within 7 days.</p>
+		  <p>Please allow 2-3 weeks for production and delivery of large orders or those that include metallic prints.</p>
+	  </div>
   </div>
  <?php 
 	include("Includes/inc_quotes_plus.php");

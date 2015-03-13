@@ -2,7 +2,7 @@
    include("Includes/inc_db.php"); 
    include("Includes/inc_functions.php");
    
-   ?>
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1-strict.dtd">
 <html xmlns="http://www.w3/org/1999/xhtml">
@@ -63,7 +63,7 @@
   <h2>Please provide your shipping address where you would like to receive your order.</h2>
   <p>(This does not need to be your billing address. Post Office Boxes are fine.)</p>
   
-  <form method="post" action="checkout.php" >
+  <form method="post" action="https://www.hikephotos.com/checkout.php" >
 	<p>
 	  <strong>First Name:</strong><br />
 	  <input type="text" name="ship-name-first" maxlength="20" size="20" value="<?= $customerFirst; ?>"/><br />
@@ -115,14 +115,15 @@
     $date = date("F j, Y, g:i a");
     $totalBucks = $_SESSION['orderTotal'] / 100 ;
 
-    $msg = "Congratulations Andrew and Sarah, you just got a new order through your website, hikephotos.com.<br />";
-    $msg .= "This order was placed on " . $date . ".<br />";
-    $msg .= "The order total is $" . $totalBucks . ".<br />";
-    $msg .= "This order will ship to : " . $customerFirst . " " . $customerLast . ".<br />";
-    $msg .= "The destination street address to ship to is : " . $shipAddress . "<br />";
-    $msg .= "The city, state, and zip code to ship to are: " .$shipCity . ", " . $shipState . " " . $shipZip .".<br />";
-    $msg .= "The special instructions, if any, read: " .$shipSpecial. ".<br /><br />";
-    $msg .= "And the details for the customer's shopping cart to print and deliver are below: <br /><br />";
+    $msg = "Congratulations Andrew and Sarah, you just got a new order through your website, hikephotos.com.\n";
+    $msg .= "This order was placed on " . $date . ".\n";
+    $msg .= "The order total is $" . $totalBucks . ".\n";
+    $msg .= "This order will ship to : " . $customerFirst . " " . $customerLast . ".\n";
+    $msg .= "The destination street address to ship to is : " . $shipAddress . "\n";
+    $msg .= "The city, state, and zip code to ship to are: " .$shipCity . ", " . $shipState . " " . $shipZip .".\n";
+    $msg .= "The special instructions, if any, read:\n";
+    $msg .= "\"" . $shipSpecial. ".\"\n\n";
+    $msg .= "And the details for the customer's shopping cart to print and deliver are below: \n\n";
     
     $max = count($_SESSION['cart']);
     for($i=0; $i<$max; $i++){
@@ -134,22 +135,22 @@
 		$quant = $_SESSION['cart'][$i]['qty'];
 		$date = date('Y-m-d');
 		$QueryString1 = "INSERT INTO order_details (session_id, date, pic_id, prod_id, color, qty) VALUES ('$sessionID', '$date', '$picID', '$prodID', '$color', '$quant')";
-		$QueryStuff = mysql_query("SELECT size, category FROM products WHERE prodID = '$prodID'");
-		$QueryReturn = mysql_fetch_row($QueryStuff);
+		$QueryStuff = @mysql_query("SELECT size, category FROM products WHERE prodID = '$prodID'");
+		$QueryReturn = @mysql_fetch_row($QueryStuff);
 		
 		$AddtoDB1= @mysql_query($QueryString1, $DBTap);
-		$msg .= "Item Number " . $j . ": <br />";
-		$msg .= "Photo Number " . $picID . "<br />";
-		$msg .= "As a " . $QueryReturn[0] . " " . $QueryReturn[1] . "<br />";
-		$msg .= "The color, if specified, is: " . $color . "<br /><br />";
+		$msg .= "Item Number " . $j . ": \n";
+		$msg .= "Photo Number " . $picID . "\n";
+		$msg .= "As a " . $QueryReturn[0] . " " . $QueryReturn[1] . "\n";
+		$msg .= "The color, if specified, is: " . $color . "\n\n";
 		
 	} //end my for loop
 		
 		$msg .= "Log into your Stripe account to find the customer's email address and verify proper payment.
 			 If this shopping cart was not dumped, remember to email an order confirmation pronto, and a tracking number 
-			 and shipping alert when the prints are on their way by post. <br /><br />
+			 and shipping alert when the prints are on their way by post. \n\n
 			 Good customer service and good photography will keep your
-			 customers coming back!<br /><br />";
+			 customers coming back!\n\n";
     $result = mail($to, $subject, $msg);
     /* all this below was used for testing and display in the browser
     $result = true;
@@ -168,7 +169,7 @@
     mysql_close($DBTap);
     $Backup = fopen("Extras/shipAddresses.txt", "ab");
     if (is_writeable("Extras/shipAddresses.txt")) {
-		echo "<p>The backup file is writeable.</p>";
+		//echo "<p>The backup file is writeable.</p>";
       fwrite($Backup, "\n" .$customerFirst . " " .$customerLast . "\n" .$shipAddress . "\n" .$shipCity 
       . ", " .$shipState . " " .$shipZip . "\n");
     }
@@ -189,7 +190,11 @@
 		  
 		 <!--moved above <?php //require_once('Extras/config.php'); ?> moved above--> 
 		  
+<<<<<<< HEAD
 		  <form action="charge.php" method="POST">
+=======
+		  <form action="https://www.hikephotos.com/charge.php" method="POST">
+>>>>>>> live_site
 			  <input type="hidden" id="stripeAmount" name="stripeAmount" value="<?php echo $_SESSION['orderTotal'] ?>" />
 			  <script
 				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -204,10 +209,10 @@
     </div>
     <h4>Or, if you need to make corrections to your shipping address before continuing, use this button.</h4>
     <div class="centralize">
-	  <form method="post" action="checkout.php">
-		&nbsp;&nbsp;
-		<input type="hidden" name="fix-shipping-submitted" value="yes" />  
-		<input type="submit" value="Correct Shipping" class="button" /><br />
+	  <form method="post" action="https://www.hikephotos.com/checkout.php">
+		<input type="submit" value="Correct Shipping" class="button" />
+		<input type="hidden" name="fix-shipping-submitted" value="yes" /> 
+		<br />
 		&nbsp;
 	  </form>
     </div>

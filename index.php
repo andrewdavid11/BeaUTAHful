@@ -21,6 +21,14 @@
   </head>
 <body>
 <body onload="setInterval('SlideshowLaunch()', 2000)">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
   <?php include("Includes/inc_left_column.php"); ?>
   <div class="rightColumn">
@@ -30,17 +38,22 @@
     <div id="slideshow">
 	    <a id="slideshowLink" href="photo.php?ID_num=320"><img src="Pictures/ShadowLogoSep.jpg" alt="A rolling slideshow of images from around the Western United States." /></a>
     </div>
-     <p><span style='color: yellow'>Checkout now works and I am securely running credit cards at last. Paypal option coming soon.</span></p>
+     <p><span style='color: yellow'>This site is now fully operational! Secure checkout with credit cards works! Sorry to anyone who noticed for all the delays, but I was working a lot,
+     got engaged, and had a move and wedding to plan. Enter the code 'friend' in your shopping cart before checkout for a 25% discount while we fulfill our first orders.</span></p>
      <p>Isn't this a Bea-UTAH-ful world we live in?! I'm a photographer, and a web designer and developer based near
       Salt Lake City, Utah.</p>
       <p>I spend some of each year out in wild places, sleeping on the ground, getting wet, climbing mountains, hiking, and taking pictures.<br />
       I created this site all by my lonesome to document my adventures, and to display my coding and Web design skills.</p>
       <p>Love my site and my style? Want to hire me? Then start at the <a href="about.php">About Page</a>.</p>
+      <a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('https://platform.tumblr.com/v1/share_1T.png') top left no-repeat transparent; position: relative; left: 20px; top: 4px;">Share on Tumblr</a>
+      <div class="fb-like" data-href="http://www.hikephotos.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
   </div>
   <?php 
 	include("Includes/inc_small_nav.php"); 
 	include("Includes/inc_footer.php");
   ?>
 </div>
+<script src="http://platform.tumblr.com/v1/share.js"></script>
+
 </body>
 </html>
