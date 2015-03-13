@@ -259,14 +259,35 @@
 		  <input type="submit" name="stripe-checkout" value="Proceed to Checkout" class="button" /><br />
 		  &nbsp;
 	   </form>
+	   
     </div>
     
-    <!--<h4><?php foreach($_SESSION['cart'] as $i => $item) { echo "Item" . ($i+1) . ": " . $_SESSION['cart'][$i]['pid'] . "</br >";} ?></h4>-->
-    <!-- <h4><?= $_SESSION['discountCode']; ?></h4> -->
-      <!--<h4><?= $_SESSION['orderTotal']; ?></h4>-->
-     <!-- <h4><?= $_SESSION['orderTotalPretty']; ?></h4>-->
-      <!--<h4><?= print_r(array_values($_SESSION['cart'])); ?></h4>-->
-      
+    <div class=" centerfloatDetails redgreytear">
+		<h3>Secure Online Payments</h3>
+		   <img src="Thumbs/credit_card_logos.jpg" />
+		   <p>For now, I am only offering checkout with Stripe, right here, on site. I will add Paypal eventually.</p>
+		   <p>Checkout pages are served on my site with "https" secure protocol to protect your private information. There is also a layer of Stripe security.</p>
+		   <p>You can use any major credit card. I do not collect or store any credit card information.</p>
+		   <p>If my site were breached, all a hacker could find out about my customers is name, and chosen shipping address- no payment details, no email addresses.</p>
+		   <p>I also do not have an option to create a repeat customer account. It means checkout will be a little longer process with each visit,
+		   but it makes my site safer, and less of a target for hackers and thieves.</p>
+    </div>
+    <br />
+    <div class=" centerfloatDetails redgreytearReverse">
+	    <h3>Additional Details</h3>
+		  <p>Free shipping on orders in the United States. If outside the United States, message me before ordering please.</p> 
+		  <p>Most orders will be completed and shipped within 7 days.</p>
+		  <p>Please allow 2-3 weeks for production and delivery of large orders or those that include metallic prints.</p>
+	</div>
+	<br />
+	<div class=" centerfloatDetails redgreytear">
+		<h3>Satisfaction Guarantee</h3>
+		   <p>There are no refunds on postcards or flip cards, unless I mess up your order (sending the wrong pictures for example).</p>
+		   <p>On all other prints, if you are unhappy for any reason, message me, and we can work a return or replacement.</p>
+		   <p>I want repeat customers, and a sterling reputation. I will not ship any order unless I am ready to stand behind the prints.</p>
+		   <p>My prints are done in a professional studio on high quality mediums.</p>
+	</div>
+    <br />
     <?php 
 
       } //ends the if block to display the cart as table

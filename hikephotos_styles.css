@@ -284,6 +284,12 @@ span.return:hover {
     text-align: center;
   }
   
+  .centerfloatDetails img {
+	border-top: none;
+	border-left: none;
+	max-width: 80%;
+  }
+  
 .centralize {
 	width: 20%;
 	margin-left:auto;

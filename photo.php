@@ -153,7 +153,7 @@
 	  </form>
 	  <div class=" centerfloatDetails redgreytearReverse">
 	    <h3>Additional Details</h3>
-		  <p>Free shipping on orders in the United States.</p> 
+		  <p>Free shipping on orders in the United States. If outside the United States, message me before ordering please.</p> 
 		  <p>Most orders will be completed and shipped within 7 days.</p>
 		  <p>Please allow 2-3 weeks for production and delivery of large orders or those that include metallic prints.</p>
 	  </div>

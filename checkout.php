@@ -169,7 +169,7 @@
     mysql_close($DBTap);
     $Backup = fopen("Extras/shipAddresses.txt", "ab");
     if (is_writeable("Extras/shipAddresses.txt")) {
-		echo "<p>The backup file is writeable.</p>";
+		//echo "<p>The backup file is writeable.</p>";
       fwrite($Backup, "\n" .$customerFirst . " " .$customerLast . "\n" .$shipAddress . "\n" .$shipCity 
       . ", " .$shipState . " " .$shipZip . "\n");
     }
@@ -190,7 +190,7 @@
 		  
 		 <!--moved above <?php //require_once('Extras/config.php'); ?> moved above--> 
 		  
-		  <form action="https://hikephotos.com/charge.php" method="POST">
+		  <form action="https://www.hikephotos.com/charge.php" method="POST">
 			  <input type="hidden" id="stripeAmount" name="stripeAmount" value="<?php echo $_SESSION['orderTotal'] ?>" />
 			  <script
 				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
