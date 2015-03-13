@@ -471,6 +471,11 @@ span.return:hover {
   float: left;
 }
 
+#credit_logos {
+	position: relative;
+	top: -7px;
+}
+
 #DBTap {
   width: 85%;
   text-align: center;

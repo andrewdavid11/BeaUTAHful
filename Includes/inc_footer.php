@@ -20,5 +20,6 @@
 		
 		<img id="stripe-img" src="Pictures/solid.png" alt="Powered by Stripe marker"/>
 		<img src="Pictures/SSL.gif" alt="Rapid SSL site seal marker" />
+		<img id="credit_logos" src="Thumbs/credit_card_logos.jpg" height="32" width="200" />
 		<iframe class="tumblr_btn" border="0" scrolling="no" allowtransparency="true" src="http://platform.tumblr.com/v1/follow_button.html?button_type=2&tumblelog=activegourmet&color_scheme=dark" frameborder="0" height="25" width="114"></iframe>
 </footer>
