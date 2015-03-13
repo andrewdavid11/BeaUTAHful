@@ -13,9 +13,3 @@ Stripe::setApiKey($stripe['secret_key']);
 ?>
 
 
-
-
-
-
-?>
-

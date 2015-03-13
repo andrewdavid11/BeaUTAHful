@@ -126,8 +126,11 @@
 	      if($prodID == 'Card' OR $prodID == 'PostCard')
 			  $cardCount++;
 	    }
-		if ($code == 'hippo') {
+		if ($code == 'friend') {
 			$disc = 0.75;
+		}
+	    if ($code == 'pickup') {
+			$disc = 0.66;
 		}
 		/*if ($cardCount >= 10) {
 			$cardDisc = 0.85;

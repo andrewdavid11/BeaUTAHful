@@ -38,7 +38,8 @@
     <div id="slideshow">
 	    <a id="slideshowLink" href="photo.php?ID_num=320"><img src="Pictures/ShadowLogoSep.jpg" alt="A rolling slideshow of images from around the Western United States." /></a>
     </div>
-     <p><span style='color: yellow'>I am testing credit cards this week.</span></p>
+     <p><span style='color: yellow'>This site is now fully operational! Secure checkout with credit cards works! Sorry to anyone who noticed for all the delays, but I was working a lot,
+     got engaged, and had a move and wedding to plan. Enter the code 'friend' in your shopping cart before checkout for a 25% discount while we fulfill our first orders.</span></p>
      <p>Isn't this a Bea-UTAH-ful world we live in?! I'm a photographer, and a web designer and developer based near
       Salt Lake City, Utah.</p>
       <p>I spend some of each year out in wild places, sleeping on the ground, getting wet, climbing mountains, hiking, and taking pictures.<br />

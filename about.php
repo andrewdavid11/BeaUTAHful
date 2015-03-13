@@ -46,14 +46,14 @@
 			<li>$300 for a basic information website with a blog, or a full-scale blog</li>
 			<li>$500 for an e-commerce store with up to 50 items for sale</li>
 			<li>$750 for a fully customized large-scale e-commerce store like this one</li>
-			<li>My rates will be higher and match industry standards, so take advantage and message me soon! Its a great deal while it lasts!</li>
+			<li>My rates will climb and match industry standards, so take advantage and message me soon! Its a great deal while it lasts!</li>
 		</ul>
 	    <p>Want more info? Interested in hiring me? <a href="contact.php">Contact me</a>.</p>
 		<img src="Pictures/AndrewWaterfall.jpg" alt="Andrew David smiles on a slab of granite near a beautiful cascading waterfall on a sunny day." />
     <h2>About This Site and My Web Development</h2>
         <p>This website is coded "from scratch" without a framework, just plain old scripts and code that instruct browsers and servers.</p>
         <p>The site is fully responsive, meaning it automatically adjusts to the screen size and device type of each visitor. Try viewing the site on different devices.
-        Images change size, the navigation menu style and layout adjust to fit the screen, and the web experience is always simple and elegant.</p>
+        Images change size, the navigation menu style and layout adjust to fit the screen, and the web experience is always simple and elegant. (With a few glitches I still need to iron out)</p>
         <p>The shopping cart connects to Stripe, and Paypal is on the way- the two most popular payment solutions for small online businesses right now.</p>
         <p>My special niche is creating e-commerce solutions, especially for other photographers. I can handle other types of websites with flair and aplomb as well,
         either fully customized, or within a popular framework such as Wordpress, SmugMug, or Magento.</p>
@@ -86,11 +86,11 @@
 				<li>Longer trips are not available right now.</li>
 			</ul>
 		</div>
-		<p>Group rates: there is an additional $10 charge per person per day (starting with the third person).</p>
+		<p>Group rates: there is an additional $10 charge per person per day (starting with the fourth person).</p>
 		<p>I can assist you with mild climbing, and with your more cumbersome gear. I will provide a pack list.
 		I will design the itinerary to hit spots at the best time of day for photographic light. It is no guarantee of great photographs, but your odds are better with me,
 		as I will know the area, conditions, travel times required, and what other professionals need and desire.</p>
-		<p>Some fresh, home-made, and healthy snacks and food are provided and will include muffins, calzones, oat bars, cereal bars, and trail mix. 
+		<p>Some fresh, home-made, and healthy snacks and food are provided and may include muffins, calzones, oat bars, cereal bars, and trail mix. 
 		We tell great stories, from our own trips and from the annals of famous mountain men.
 		We also share our knowledge so you will be ready to head out into the wild on your own for your next trip.
 		Of course, if you want to keep hiring us, that's fine too. Taste our cooking and you just may have to!</p>

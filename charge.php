@@ -23,22 +23,22 @@
 	<h2>This is a <span class="warning">Payment Verification</span> Page</h2>
 <?php
 	require_once('Extras/config.php');
-	  echo "<p>Checkpoint 2 reached</p>";
+	  //echo "<p>Checkpoint 2 reached</p>";
 	$token = isset($_POST['stripeToken']) ? $_POST['stripeToken'] : '';
 	$email = isset($_POST['stripeEmail']) ? $_POST['stripeEmail'] : '';
 	$amount = isset($_POST['stripeAmount']) ? $_POST['stripeAmount'] : '';
-		echo "<p>Amount is equal to " . $amount . " and token is set to  " . $token . " while email is " .$email ."</p>";
+		//echo "<p>Amount is equal to " . $amount . " cents and the stripe token is set to  " . $token . " while customer email is " .$email ."</p>";
 	if(empty($token)) {
 		echo "<h3>You have not gone through checkout.</h3>";
 		echo "<p>Check out the <a style='color: yellow' href='galleries.php'>Galleries</a>, <a style='color: yellow' href='quick.php'>Quick Orders</a> or <a style='color: yellow' href='search.php'>Search</a> pages to find great products!</p>";
 	}
 	else {
-		echo "<p>Checkpoint 3 reached </p>";
+		//echo "<p>Checkpoint 3 reached </p>";
 	$customer = Stripe_Customer::create(array(
 	'email' => $email,
 	'card' => $token
 	));
-	   echo "<p>Checkpoint 4 reached</p>";
+	   //echo "<p>Checkpoint 4 reached</p>";
 	$charge = Stripe_Charge::create(array(
 	'customer' => $customer->id,
 	'amount' => $amount,
@@ -47,13 +47,17 @@
 	  
 	  $amountFixed = $amount / 100;
 	  $amountFixed = number_format($amountFixed, 2);
-	  echo '<h2>Successfully charged $' . $amountFixed . '.</h2>';
+	  echo '<h2>Your card has been successfully charged $' . $amountFixed . '.</h2>';
 	  echo '<h3>You will receive an email shortly to confirm your order, and another with a tracking number when your fine art prints 
 	  are on their way by post.<br />';
 	  echo 'Call <span class="warning">801-300-5549</span> anytime with questions. Thank you for your business!<br />
 	  Please come again, and tell your friends.</h3>';
-	}
+	} //end the else
 ?>
+    <p>I am on Tumblr under the handle "ActiveGourmet", where my wife and I post some free preview outdoor pics, and a lot of good recipes.</p>
+    <p>Or check out my blog here on site, <a href="http://www.hikephotos.com/blog">"The Still Wild West"</a>, 
+    where I write stories and articles about wild places, mountains, camping, and climbing. I aim to add some new content every week
+    when I am not out in the middle of nowhere.</p>
  <!--
 	$token = isset($_POST['stripeToken']) ? $_POST['stripeToken'] : '';
 	$email = isset($_POST['stripeEmail']) ? $_POST['stripeEmail'] : '';
