@@ -63,7 +63,7 @@
   <h2>Please provide your shipping address where you would like to receive your order.</h2>
   <p>(This does not need to be your billing address. Post Office Boxes are fine.)</p>
   
-  <form method="post" action="https://www.hikephotos.com/checkout.php" >
+  <form method="post" action="checkout.php" >
 	<p>
 	  <strong>First Name:</strong><br />
 	  <input type="text" name="ship-name-first" maxlength="20" size="20" value="<?= $customerFirst; ?>"/><br />
@@ -193,7 +193,7 @@
 <<<<<<< HEAD
 		  <form action="charge.php" method="POST">
 =======
-		  <form action="https://www.hikephotos.com/charge.php" method="POST">
+		  <form action="charge.php" method="POST">
 >>>>>>> live_site
 			  <input type="hidden" id="stripeAmount" name="stripeAmount" value="<?php echo $_SESSION['orderTotal'] ?>" />
 			  <script
@@ -209,7 +209,7 @@
     </div>
     <h4>Or, if you need to make corrections to your shipping address before continuing, use this button.</h4>
     <div class="centralize">
-	  <form method="post" action="https://www.hikephotos.com/checkout.php">
+	  <form method="post" action="checkout.php">
 		<input type="submit" value="Correct Shipping" class="button" />
 		<input type="hidden" name="fix-shipping-submitted" value="yes" /> 
 		<br />
