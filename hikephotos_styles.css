@@ -299,6 +299,7 @@ span.return:hover {
 .centralize form {
 	border-bottom: none;
 	border-right: none;
+	text-align: center;
 }
 	
 .container {

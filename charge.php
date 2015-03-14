@@ -36,14 +36,15 @@
 		//echo "<p>Checkpoint 3 reached </p>";
 	$customer = Stripe_Customer::create(array(
 	'email' => $email,
-	'card' => $token
+	'card' => $token,
 	));
-	   //echo "<p>Checkpoint 4 reached</p>";
-	$charge = Stripe_Charge::create(array(
-	'customer' => $customer->id,
-	'amount' => $amount,
-	'currency' => 'usd'
-	));
+	try{
+		//echo "<p>Checkpoint 4 reached</p>";
+		$charge = Stripe_Charge::create(array(
+		'customer' => $customer->id,
+		'amount' => $amount,
+		'currency' => 'usd'
+		));
 	  
 	  $amountFixed = $amount / 100;
 	  $amountFixed = number_format($amountFixed, 2);
@@ -52,34 +53,38 @@
 	  are on their way by post.<br />';
 	  echo 'Call <span class="warning">801-300-5549</span> anytime with questions. Thank you for your business!<br />
 	  Please come again, and tell your friends.</h3>';
-	} //end the else
+	} //end the try
+	catch (Stripe_ApiConnectionError $e) {
+    // Network problem, perhaps try again.
+      echo "<h3 class='warning'>Network down. This may be an issue with your internet provider, or with my mine. Wait a moment, and then try your purchase again please.</h3>";
+	} 
+	catch (Stripe_InvalidRequestError $e) {
+    // You screwed up in your programming. Shouldn't happen!
+    echo "<h3 class='warning'>Uh oh. Andrew David messed up his coding. Please check back. An email has been sent notifying him of his coding boo-boo!</h3>";
+	} 
+	catch (Stripe_ApiError $e) {
+    // Stripe's servers are down!
+    echo "<h3 class='warning'>The Stripe servers are down. Trust me, this concerns me more than you, and Stripe more than me! In California, many people are furiously working on this problem.
+    Please come back and try your purchase again sometime soon!</h3>";
+	} 
+	catch (Stripe_CardError $e) {
+    // Card was declined.
+    $e_json = $e->getJsonBody();
+    $error = $e_json['error'];
+    // Use $error['message'].
+    echo "<h3 class='warning'>" . $error['message'] ."</h3>";
+    echo "<h3>If you like, you can return to your <a href='cart.php'>Shopping Cart</a> and try to checkout again.</h3>";
+	}
+	} //end the else that holds all the try and catch statements
 ?>
+    <br />
+    <br />
     <p>I am on Tumblr under the handle "ActiveGourmet", where my wife and I post some free preview outdoor pics, and a lot of good recipes.</p>
     <p>Or check out my blog here on site, <a href="http://www.hikephotos.com/blog">"The Still Wild West"</a>, 
     where I write stories and articles about wild places, mountains, camping, and climbing. I aim to add some new content every week
     when I am not out in the middle of nowhere.</p>
- <!--
-	
-
-		// Create the charge on Stripe's servers - this will charge the user's card
-	try {
-	$charge = Stripe_Charge::create(array(
-	 "customer" => $customer->id,
-	  "amount" => $amount,
-	  "currency" => "usd",
-	 )
-	);
-	  echo "Charged " . $amount . " like a charm!";
-	} 
-	catch(\Stripe\Error\Card $e) {
-		// The card has been declined
-		echo "<p>Hurts don't it?</p>";
-	}
 		
- -->
-		
-	
-  <?php include("Includes/inc_footer.php"); ?>
+<?php include("Includes/inc_footer.php"); ?>
  </div>	
 </body>
 </html>

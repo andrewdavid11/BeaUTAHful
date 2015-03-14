@@ -190,11 +190,7 @@
 		  
 		 <!--moved above <?php //require_once('Extras/config.php'); ?> moved above--> 
 		  
-<<<<<<< HEAD
 		  <form action="charge.php" method="POST">
-=======
-		  <form action="charge.php" method="POST">
->>>>>>> live_site
 			  <input type="hidden" id="stripeAmount" name="stripeAmount" value="<?php echo $_SESSION['orderTotal'] ?>" />
 			  <script
 				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
