@@ -117,7 +117,7 @@
 	   
 	  </div> <!-- ends the "noTable div" -->
 	  <br />
-	  <a href="search.php?d=Utah&e=Desert">View all photos in the the Utah Deserts Gallery>></a>
+	  <a href="search.php?q=Desert">View all photos in my SouthWest Deserts Gallery>></a>
 	  <hr />
   </div>
   <div id="Glacier National Park">
